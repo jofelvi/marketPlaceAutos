@@ -1,0 +1,7 @@
+export const SAVETHEME = "SAVETHEME"
+export const SAVEUSER= "SAVEUSER"
+export const INCREMENTAR = "INCREMENTAR"
+export const DECREMENTAR = "DECREMENTAR"
+export const GETPOKEMONS = "GETPOKEMONS"
+export const CARGANDO = "CARGANDO"
+
