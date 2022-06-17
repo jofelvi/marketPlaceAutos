@@ -1,0 +1,15 @@
+.container{
+    text-align: center;
+}
+
+.container p {
+    font-size: 2rem;
+}
+
+.cars {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

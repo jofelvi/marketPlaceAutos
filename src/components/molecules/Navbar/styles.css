@@ -1,0 +1,30 @@
+.navbar {
+    max-width: 100%;
+    height: 60px;
+    padding: 0 30px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--blue-bg-color);
+}
+
+.logo {
+    color: var(--white-bg-color);
+}
+
+.content-items {
+    width: 400px;
+}
+
+.item-nav {
+    text-align: center;
+    color: var(--white-bg-color);
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .content-items {
+        display: none;
+    }
+}

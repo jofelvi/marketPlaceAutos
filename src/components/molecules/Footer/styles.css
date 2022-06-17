@@ -1,0 +1,36 @@
+footer{
+    width: 75%;
+    height: 250px;
+    margin: auto;
+    background-color: var(--white-bg-color);
+    color: var(--blue-bg-color);
+    border: 1px solid var(--blue-bg-color);
+    text-align: center;
+}
+
+footer .title {
+    font-size: 1.6rem;
+}
+
+footer .sub-title {
+    font-size: 1.3rem;
+}
+
+footer .schedule {
+    font-size: 1rem;
+}
+
+footer .content-icons {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+@media screen and (max-width: 800px) {
+    footer {
+        width: 90%;
+        margin-top: 20px;
+    }
+}

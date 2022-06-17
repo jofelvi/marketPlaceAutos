@@ -1,0 +1,80 @@
+.card {
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white-bg-color);
+    margin: 0 20px 20px 0;
+    border-radius: 7px;
+    border: 1px solid var(--blue-bg-color);
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+}
+
+.card:hover{
+    background-color: var(--blue-light-bg-color);
+}
+
+.header-card {
+    width: 90%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--blue-bg-color);
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.header-card .icon {
+    position: relative;
+    left: 100px;
+}
+
+.content-card img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer-card {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-card div{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: var(--blue-bg-color);
+}
+
+.info-car {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    .card {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .footer-card{
+        height: 250px;
+    }
+
+    .footer-card div{
+        margin-top: 0;
+    }
+}
