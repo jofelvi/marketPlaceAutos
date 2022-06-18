@@ -5,7 +5,7 @@ const Image = ({
     src
 }) => {
     return (
-        <img src={src} alt="Marketplace" />
+        <img className='banner' src={src} alt="Marketplace" />
     )
 }
 
