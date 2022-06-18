@@ -13,11 +13,12 @@
 }
 
 .content-items {
-    width: 400px;
+    width: 500px;
 }
 
 .item-nav {
     text-align: center;
+    text-decoration: none;
     color: var(--white-bg-color);
     padding-left: 30px;
     cursor: pointer;

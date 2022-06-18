@@ -1,7 +1,8 @@
 import React from 'react'
+import { AiFillHome } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 import { items } from './items'
 import './styles.css'
-import { AiFillHome } from 'react-icons/ai'
 
 const Navbar = () => {
     return (
@@ -9,9 +10,9 @@ const Navbar = () => {
             <h1 className='logo'>Marketplace.com</h1>
 
             <div className='content-items'>
-                <span className='item-nav'><AiFillHome size={18}/></span>
+                <Link to='/' className='item-nav'><AiFillHome size={18}/></Link>
                 {items.map((item) => (
-                    <span className='item-nav' key={item.id}>{item.label}</span>
+                    <Link to={item.route} className='item-nav' key={item.id}>{item.label}</Link>
                 ))}
             </div>
         </nav>
