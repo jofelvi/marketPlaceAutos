@@ -1,25 +1,25 @@
-.form-login {
+.content-actions{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+} 
+
+form {
     width: 400px;
-    height: 80%;
+    height: 500px;
     border-radius: 5px;
     padding: 20px;
     background-color: var(--white-bg-color);
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-.title {
-    font-size: 2.5rem;
-    text-align: center;
-}
-
-.content-inputs {
-    width: 80%;
-    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
-    right: 10px;
+    margin: auto;
+    align-items: center;
 }
 
 .content-buttons {
@@ -32,12 +32,20 @@
     padding-bottom: 50px;
 }
 
-.content-buttons .recovery-password {
+.buyer {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    background-color: var(--white-bg-color);
     color: var(--blue-bg-color);
+    border: 2px solid var(--blue-bg-color);
     cursor: pointer;
+    font-size: 1rem;
+    margin: auto;
 }
 
-.login {
+.seller {
     width: 100%;
     height: 40px;
     border-radius: 10px;
@@ -48,30 +56,12 @@
     cursor: pointer;
     font-size: 1rem;
     margin: auto;
-}
-
-.register {
-    width: 100%;
-    height: 40px;
-    border-radius: 10px;
-    outline: none;
-    background-color: transparent;
-    color: var(--blue-bg-color);
-    border: 2px solid var(--blue-bg-color);
-    cursor: pointer;
-    font-size: 1rem;
-    margin: auto;
     margin-top: 20px;
 }
 
-@media screen and (max-width: 487px) {
-    .form-login {
+@media screen and (max-width: 967px) {
+    form {
         width: 80%;
         margin: auto;
-    }
-
-    .content-inputs {
-        width: 90%;
-        right: 0;
     }
 }

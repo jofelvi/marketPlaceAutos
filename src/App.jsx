@@ -2,6 +2,9 @@ import { Route, Routes } from "react-router-dom";
 import Layout from "./components/organisms/Layout";
 import Home from './pages/home';
 import Login from "./pages/login";
+import Buyer from "./pages/register/buyer";
+import SelectedBuyerSeller from "./pages/register/selected-buyer-seller";
+import Seller from "./pages/register/seller";
 
 function App() {
     return (
@@ -9,6 +12,9 @@ function App() {
             <Route path="" element={<Layout />} >
                 <Route path="/" element={<Home />} />
                 <Route path="/login" element={<Login />} />
+                <Route path="/selected-buyer-seller" element={<SelectedBuyerSeller />} />
+                <Route path="/register-buyer" element={<Buyer />} />
+                <Route path="/register-seller" element={<Seller />} />
             </Route>
         </Routes>
     )

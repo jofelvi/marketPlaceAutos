@@ -3,11 +3,12 @@ import { TiLockClosed } from 'react-icons/ti'
 import { ImUser } from 'react-icons/im'
 import Input from '../../atoms/Input'
 import './styles.css'
-import Button from '../../atoms/Button'
+import { useNavigate } from 'react-router-dom'
 
 const LoginForm = () => {
+    const navigate = useNavigate();
     return (
-        <form>
+        <form className='form-login'>
             <p className='title'>Inicia Sesión</p>
 
             <div className="content-inputs">
@@ -33,7 +34,7 @@ const LoginForm = () => {
                 <p className='recovery-password'>¿Olvidaste tu contraseña?</p>
 
                 <button className='login'>Iniciar sesión</button>
-                <button className='register'>Registrate</button>
+                <button onClick={() => navigate('/selected-buyer-seller')} className='register'>Registrate</button>
             </div>
         </form>
     )

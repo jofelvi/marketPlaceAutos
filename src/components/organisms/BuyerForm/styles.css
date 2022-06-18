@@ -1,0 +1,58 @@
+.content-buyer-form {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding: 50px 0 50px 0;
+
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: var(--white-bg-color);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form .inputs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.content-input-identification {
+    width: 250px;
+    display: flex;
+}
+
+.checkbox {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    color: var(--blue-bg-color);
+}
+
+.content-buttons-register {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.content-buttons-register button {
+    width: 200px;
+}
+
+@media screen and (max-width: 967px) {
+    .content-buyer-form {
+        width: 100%;
+        margin: auto;
+    }
+
+    .form {
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+}

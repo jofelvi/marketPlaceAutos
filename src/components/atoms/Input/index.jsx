@@ -1,5 +1,4 @@
 import React from 'react'
-// import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai'
 import './styles.css'
 
 const Input = ({
@@ -7,14 +6,15 @@ const Input = ({
     value,
     type,
     placeholder,
-    isPassword,
+    width = '100%',
+    left = '20px',
     onChange,
     Icon
 }) => {
     return (
-        <div className="content-input">
+        <div className="content-input" style={{width: width}}>
 
-            <Icon className='icon' size={22} />
+            <Icon className='icon' size={22} style={{left: left}}/>
 
             <input
                 name={name}
