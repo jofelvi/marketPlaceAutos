@@ -1,16 +1,17 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom'
 import StykyButton from '../../atoms/StakyButton'
 import Footer from '../../molecules/Footer'
 import Navbar from '../../molecules/Navbar'
 
 const Layout = () => {
+    const location = useLocation();
     return (
         <>
             <Navbar />
             <Outlet />
-            <StykyButton/>
-            <Footer/>
+            {location.pathname !== '/filter-cars' && <StykyButton/>}
+            {location.pathname === '/' && <Footer/>}
         </>
     )
 }

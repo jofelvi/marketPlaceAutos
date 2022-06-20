@@ -13,3 +13,11 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.cars-filter {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

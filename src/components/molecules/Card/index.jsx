@@ -3,6 +3,7 @@ import { AiOutlineHeart } from 'react-icons/ai'
 import { BsTagFill } from 'react-icons/bs'
 import { HiIdentification } from 'react-icons/hi'
 import { TbSteeringWheel } from 'react-icons/tb'
+import { useNavigate } from 'react-router-dom'
 import Button from '../../atoms/Button'
 import './styles.css'
 
@@ -15,8 +16,9 @@ const Card = ({
     year,
     transmition
 }) => {
+    const navigate = useNavigate();
     return (
-        <div className='card'>
+        <div className='card' onClick={() => navigate(`/details-car/${id}`)}>
             <div className='header-card'>
                 <span>{name}</span> <AiOutlineHeart className='icon' size={22} />
             </div>

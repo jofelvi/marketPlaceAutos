@@ -17,12 +17,12 @@ export const items = [
     {
         id: 1,
         label: 'Publicar',
-        route: '/login'
+        route: '/'
     },
     {
         id: 2,
         label: 'Concesionarios',
-        route: '/login'
+        route: '/'
     },
     {
         id: 2,

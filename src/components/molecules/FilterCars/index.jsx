@@ -1,8 +1,10 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import Select from '../../atoms/Select'
 import './styles.css'
 
 const FilterCars = () => {
+    const navigate = useNavigate();
     const categories = [
         {
             name: 'Buscar autos',
@@ -91,7 +93,7 @@ const FilterCars = () => {
                     name='modelCars'
                     options={models}
                 />
-                <button>Buscar</button>
+                <button onClick={() => navigate('/filter-cars')}>Buscar</button>
             </div>
             <div className="content-selects-transparent">
                 <Select
