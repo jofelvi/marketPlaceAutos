@@ -1,14 +1,17 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom'
 import { cars } from '../../../utils/recentCars'
 import Card from '../../molecules/Card'
 import './styles.css'
 
 const RecentCars = () => {
+    const location = useLocation();
+    const condition = location.pathname === '/filter-cars';
     return (
         <div className='container'>
-            <p>Autos más recientes</p>
+            <p>{condition ? '40 Vehículos encontrados' : 'Autos más recientes'}</p>
 
-            <div className='cars'>
+            <div className={condition ? 'cars-filter' : 'cars'}>
                 {cars.map(car => (
                     <Card 
                         key={car.id}
