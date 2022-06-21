@@ -9,7 +9,15 @@ import { initialValuesLogin, validateLogin } from '../../../utils/login/validate
 
 const LoginForm = () => {
     const navigate = useNavigate();
-    const { formik } = useOnChange(initialValuesLogin, validateLogin);
+
+    const login = (data) => {
+        console.log(data);
+        setFormData(data);
+
+        formik.resetForm();
+    }
+
+    const { formik, setFormData } = useOnChange(initialValuesLogin, validateLogin, login);
 
     return (
         <form className='form-login' onSubmit={formik.handleSubmit}>
