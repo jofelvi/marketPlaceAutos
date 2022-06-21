@@ -4,11 +4,15 @@ import { ImUser } from 'react-icons/im'
 import Input from '../../atoms/Input'
 import './styles.css'
 import { useNavigate } from 'react-router-dom'
+import useOnChange from '../../../hooks/useOnChange'
+import { initialValuesLogin, validateLogin } from '../../../utils/login/validateLogin'
 
 const LoginForm = () => {
     const navigate = useNavigate();
+    const { formik } = useOnChange(initialValuesLogin, validateLogin);
+
     return (
-        <form className='form-login'>
+        <form className='form-login' onSubmit={formik.handleSubmit}>
             <p className='title'>Inicia Sesión</p>
 
             <div className="content-inputs">
@@ -16,7 +20,9 @@ const LoginForm = () => {
                     name='email'
                     type='email'
                     placeholder='Correo'
-                    onChange={e => console.log(e.target.value)}
+                    onChange={formik.handleChange}
+                    value={formik.values.email}
+                    formik={formik}
                     Icon={ImUser}
                 />
 
@@ -25,7 +31,9 @@ const LoginForm = () => {
                     type='password'
                     placeholder='Contraseña'
                     isPassword
-                    onChange={e => console.log(e.target.value)}
+                    onChange={formik.handleChange}
+                    value={formik.values.password}
+                    formik={formik}
                     Icon={TiLockClosed}
                 />
             </div>

@@ -6,9 +6,12 @@ import { TiLockClosed } from 'react-icons/ti'
 import { BiWorld } from 'react-icons/bi'
 import Input from '../../atoms/Input'
 import './styles.css'
+import { initialValuesSeller, validateSeller } from '../../../utils/register/validateRegister'
+import useOnChange from '../../../hooks/useOnChange'
 
 const SellerForm = () => {
     const navigate = useNavigate();
+    const { formik } = useOnChange(initialValuesSeller, validateSeller);
     return (
         <div className='content-seller-form'>
             <form className='form'>
@@ -18,7 +21,9 @@ const SellerForm = () => {
                         name='business_name'
                         type='text'
                         placeholder='Representación legal'
-                        onChange={e => console.log(e.target.value)}
+                        onChange={formik.handleChange}
+                        value={formik.values.business_name}
+                        formik={formik}
                         Icon={ImUser}
                         width='250px'
                         left='20px'
@@ -28,7 +33,9 @@ const SellerForm = () => {
                         name='phone'
                         type='phone'
                         placeholder='Teléfono'
-                        onChange={e => console.log(e.target.value)}
+                        onChange={formik.handleChange}
+                        value={formik.values.phone}
+                        formik={formik}
                         Icon={ImUser}
                         width='250px'
                         left='20px'
@@ -38,7 +45,9 @@ const SellerForm = () => {
                         name='identification'
                         type='text'
                         placeholder='R.I.F'
-                        onChange={e => console.log(e.target.value)}
+                        onChange={formik.handleChange}
+                        value={formik.values.identification}
+                        formik={formik}
                         Icon={HiIdentification}
                         width='250px'
                         left='20px'
@@ -48,7 +57,9 @@ const SellerForm = () => {
                         name='social_name'
                         type='text'
                         placeholder='Razón social'
-                        onChange={e => console.log(e.target.value)}
+                        onChange={formik.handleChange}
+                        value={formik.values.social_name}
+                        formik={formik}
                         Icon={ImUser}
                         width='250px'
                         left='20px'
@@ -58,7 +69,9 @@ const SellerForm = () => {
                         name='state'
                         type='text'
                         placeholder='Estado'
-                        onChange={e => console.log(e.target.value)}
+                        onChange={formik.handleChange}
+                        value={formik.values.state}
+                        formik={formik}
                         Icon={HiIdentification}
                         width='250px'
                         left='20px'
@@ -68,7 +81,9 @@ const SellerForm = () => {
                         name='email'
                         type='email'
                         placeholder='Correo electrónico'
-                        onChange={e => console.log(e.target.value)}
+                        onChange={formik.handleChange}
+                        value={formik.values.email}
+                        formik={formik}
                         Icon={HiIdentification}
                         width='250px'
                         left='20px'
@@ -76,19 +91,23 @@ const SellerForm = () => {
 
                     <Input
                         name='password'
-                        type='text'
+                        type='password'
                         placeholder='Contraseña'
-                        onChange={e => console.log(e.target.value)}
+                        onChange={formik.handleChange}
+                        value={formik.values.password}
+                        formik={formik}
                         Icon={TiLockClosed}
                         width='250px'
                         left='20px'
                     />
 
                     <Input
-                        name='last_name'
-                        type='text'
+                        name='confirm_password'
+                        type='password'
                         placeholder='Confirmar'
-                        onChange={e => console.log(e.target.value)}
+                        onChange={formik.handleChange}
+                        value={formik.values.confirm_password}
+                        formik={formik}
                         Icon={TiLockClosed}
                         width='250px'
                         left='20px'
@@ -98,18 +117,20 @@ const SellerForm = () => {
                         name='ubication'
                         type='text'
                         placeholder='Ubicación'
-                        onChange={e => console.log(e.target.value)}
+                        onChange={formik.handleChange}
+                        value={formik.values.ubication}
+                        formik={formik}
                         Icon={BiWorld}
                         width='250px'
                         left='20px'
                     />
 
-                    <label className='checkbox'><input type="checkbox" id="cbox1" value="first_checkbox" /> Acepto términos y condiciones</label>
+                    <label className={formik?.errors['accept'] ? 'checkbox-red' : 'checkbox'}><input type="checkbox" name='accept' value={formik.values.accept} onChange={formik.handleChange} formik={formik} /> {formik?.errors['accept'] ? formik?.errors['accept'] : 'Acepto términos y condiciones'}</label>
                 </div>
             </form>
             <div className="content-buttons-register">
 
-                <button className='login'>Aceptar</button>
+                <button className='login' onClick={formik.handleSubmit}>Aceptar</button>
                 <button className='buyer' onClick={() => navigate('/selected-buyer-seller')}>Cancelar</button>
             </div>
         </div>

@@ -12,8 +12,6 @@
     z-index: 1;
 }
 
-
-
 .content-input .input {
     width: 100%;
     height: 40px;
@@ -24,5 +22,26 @@
     outline: none;
     position: relative;
     right: 10px;
+}
 
+.content-input .input-invalid {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid var(--red-bg-color);
+    color: var(--red-bg-color);
+    padding-left: 30px;
+    outline: none;
+    position: relative;
+    right: 10px;
+}
+
+.p-error {
+    color: var(--red-bg-color);
+}
+
+.icon-red {
+    position: relative;
+    z-index: 1;
+    color: var(--red-bg-color);
 }
