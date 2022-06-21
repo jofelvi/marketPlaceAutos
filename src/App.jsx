@@ -7,6 +7,7 @@ import SelectedBuyerSeller from "./pages/register/selected-buyer-seller";
 import Seller from "./pages/register/seller";
 import FilterCars from "./pages/filter-cars";
 import DetailsCars from "./pages/details-car";
+import PublishVehicle from "./pages/publish-vehicle";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                 <Route path="/register-seller" element={<Seller />} />
                 <Route path="/filter-cars" element={<FilterCars />} />
                 <Route path="/details-car/:id" element={<DetailsCars />} />
+                <Route path="/publish-vehicle" element={<PublishVehicle />} />
             </Route>
         </Routes>
     )

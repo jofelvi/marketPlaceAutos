@@ -11,7 +11,7 @@ const Input = ({
     left = '20px',
     formik,
     onChange,
-    Icon
+    Icon,
 }) => {
     return (
         <div className="field">
