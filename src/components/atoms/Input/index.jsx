@@ -1,4 +1,5 @@
 import React from 'react'
+import { getFormErrorMessage } from '../../../utils/getFormErrorMessage'
 import './styles.css'
 
 const Input = ({
@@ -8,24 +9,27 @@ const Input = ({
     placeholder,
     width = '100%',
     left = '20px',
+    formik,
     onChange,
     Icon
 }) => {
     return (
-        <div className="content-input" style={{width: width}}>
+        <div className="field">
+            <div className="content-input" style={{ width: width }}>
 
-            <Icon className='icon' size={22} style={{left: left}}/>
+                <Icon className={formik?.errors[name] ? 'icon-red ' : 'icon'} size={22} style={{ left: left }} />
 
-            <input
-                name={name}
-                value={value}
-                type={type}
-                placeholder={placeholder}
-                onChange={onChange}
-                className='input'
-            />
+                <input
+                    name={name}
+                    value={value}
+                    type={type}
+                    placeholder={placeholder}
+                    onChange={onChange}
+                    className={formik?.errors[name] ? 'input-invalid' : 'input'}
+                />
 
-
+            </div>
+            {getFormErrorMessage(name, formik)}
         </div>
     )
 }
