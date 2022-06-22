@@ -8,10 +8,10 @@ export const initialValuesPublishVehicle = {
     brand: '',
     model: '',
     year: '',
-    
+
 }
 
-export const validatePublishVehicle = (data) => {
+export const validatePublishVehicleStepOne = (data) => {
     let errors = {};
 
     if (!data.first_name) {
@@ -32,6 +32,24 @@ export const validatePublishVehicle = (data) => {
 
     if (!data.phone) {
         errors.phone = 'El número telefónico es requerido.';
+    }
+
+    return errors;
+}
+
+export const validatePublishVehicleStepTwo = (data) => {
+    let errors = {};
+
+    if (!data.brand) {
+        errors.brand = 'La marca del vehículo es requerida.';
+    }
+
+    if (!data.model) {
+        errors.model = 'La modelo del vehículo es requerido.';
+    }
+
+    if (!data.year) {
+        errors.year = 'El año del vehículo es requerido.';
     }
 
     return errors;

@@ -5,7 +5,7 @@ import Photos from './photos';
 import Vehicle from './vehicle';
 import './styles.css'
 import useOnChange from '../../hooks/useOnChange';
-import { initialValuesPublishVehicle, validatePublishVehicle } from '../../utils/publish-vehicle/validatePublishVehicle';
+import { initialValuesPublishVehicle, validatePublishVehicleStepOne, validatePublishVehicleStepTwo } from '../../utils/publish-vehicle/validatePublishVehicle';
 
 const { Step } = Steps;
 
@@ -21,6 +21,7 @@ const PublishVehicle = () => {
                 !formik.errors.phone
             ) {
                 setCurrent(current + 1);
+                console.log(formik);
             }
         } else if (current === 1) {
             if (!formik.errors.model &&
@@ -43,7 +44,9 @@ const PublishVehicle = () => {
         }
     };
 
-    const { formik, setFormData } = useOnChange(initialValuesPublishVehicle, validatePublishVehicle, next);
+    const checkValidateErrors = current === 0 ? validatePublishVehicleStepOne : current === 1 ? validatePublishVehicleStepTwo : current === 2 ? validatePublishVehicleStepOne : null;
+
+    const { formik, setFormData } = useOnChange(initialValuesPublishVehicle, checkValidateErrors, next);
 
 
     const prev = () => {

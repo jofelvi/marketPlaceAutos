@@ -3,11 +3,8 @@ import { BiWorld } from 'react-icons/bi'
 import { HiIdentification } from 'react-icons/hi'
 import { ImUser } from 'react-icons/im'
 import { BsFillTelephoneFill } from 'react-icons/bs'
-import { useNavigate } from 'react-router-dom'
 import Input from '../../../components/atoms/Input'
-import useOnChange from '../../../hooks/useOnChange'
 import './styles.css'
-import { initialValuesPublishVehicle, validatePublishVehicle } from '../../../utils/publish-vehicle/validatePublishVehicle'
 
 const DataUser = ({ formik }) => {
     return (
