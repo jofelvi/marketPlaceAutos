@@ -1,0 +1,99 @@
+.content-steps {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blue {
+    background-color: var(--blue-bg-color);
+}
+
+.text-blue {
+    color: var(--blue-bg-color);
+}
+
+.white {
+    background-color: var(--white-bg-color);
+}
+
+.text-white {
+    color: var(--white-bg-color);
+}
+
+.content-steps .title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.content-steps .data-user {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+}
+
+.content-steps .data-user .step1-info {
+    width: 50%;
+    margin: auto;
+}
+
+.content-steps .data-user .step1-info .mid-title {
+    font-size: 1.6rem;
+}
+
+.content-steps .data-user .step1-info .jr-title {
+    font-size: 1.2rem;
+}
+
+.content-steps .data-user .asset {
+    width: 50%;
+    display: flex;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.max-img {
+    width: 100%;
+}
+
+.jr-img {
+    width: 300px;
+}
+
+.content-forms {
+    width: 80%;
+    margin: auto;
+}
+
+@media screen and (max-width: 967px) {
+    .data-user {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content-steps .data-user .step1-info {
+        width: 100%;
+        margin: auto;
+    }
+
+    .content-steps .data-user .asset {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content-steps .data-user .asset img {
+        width: 200px;
+    }
+}

@@ -17,7 +17,7 @@ export const items = [
     {
         id: 1,
         label: 'Publicar',
-        route: '/'
+        route: '/publish-vehicle'
     },
     {
         id: 2,

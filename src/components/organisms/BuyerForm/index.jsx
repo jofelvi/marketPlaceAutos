@@ -10,7 +10,15 @@ import { initialValuesBuyer, validateBuyer } from '../../../utils/register/valid
 
 const BuyerForm = () => {
     const navigate = useNavigate();
-    const { formik } = useOnChange(initialValuesBuyer, validateBuyer);
+
+    const register = (data) => {
+        console.log(data);
+        setFormData(data);
+
+        formik.resetForm();
+    }
+
+    const { formik, setFormData } = useOnChange(initialValuesBuyer, validateBuyer, register);
     return (
         <div className='content-buyer-form'>
             <form className='form'>
@@ -88,12 +96,12 @@ const BuyerForm = () => {
                         left='20px'
                     />
 
-                    <label className={formik?.errors['accept'] ? 'checkbox-red' : 'checkbox'}><input type="checkbox" name='accept' value={formik.values.accept} onChange={formik.handleChange} formik={formik}/> {formik?.errors['accept'] ? formik?.errors['accept'] : 'Acepto términos y condiciones'}</label>
+                    <label className={formik?.errors['accept'] ? 'checkbox-red' : 'checkbox'}><input type="checkbox" name='accept' value={formik.values.accept} onChange={formik.handleChange} formik={formik} /> {formik?.errors['accept'] ? formik?.errors['accept'] : 'Acepto términos y condiciones'}</label>
                 </div>
             </form>
             <div className="content-buttons-register">
-                    <button className='login' onClick={formik.handleSubmit}>Aceptar</button>
-                    <button className='buyer' onClick={() => navigate('/selected-buyer-seller')}>Cancelar</button>
+                <button className='login' onClick={formik.handleSubmit}>Aceptar</button>
+                <button className='buyer' onClick={() => navigate('/selected-buyer-seller')}>Cancelar</button>
             </div>
         </div>
     )

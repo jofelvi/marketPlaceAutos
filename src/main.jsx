@@ -8,6 +8,7 @@ import thunk from 'redux-thunk'
 import reducer from './store/index'
 import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly';
 import { BrowserRouter } from "react-router-dom";
+import "antd/dist/antd.css";
 import './index.css'
 
 const prod = import.meta.env.PROD

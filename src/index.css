@@ -1,9 +1,10 @@
 :root {
-  --blue-bg-color: #189CF2;
+  --blue-bg-color: #00A3FF;
+  --blue-light-bg-color: #D7EFFF;
   --white-bg-color: #fff;
   --gray-bg-color: #E8E8E8;
+  --gray-light-color: #F4F4F4;
   --black-bg-color: #000;
-  --blue-light-bg-color: #D7EFFF;
   --red-bg-color: red;
 }
 

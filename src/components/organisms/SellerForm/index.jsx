@@ -11,7 +11,16 @@ import useOnChange from '../../../hooks/useOnChange'
 
 const SellerForm = () => {
     const navigate = useNavigate();
-    const { formik } = useOnChange(initialValuesSeller, validateSeller);
+
+    const register = (data) => {
+        console.log(data);
+        setFormData(data);
+
+        formik.resetForm();
+    }
+
+    const { formik, setFormData } = useOnChange(initialValuesSeller, validateSeller, register);
+    
     return (
         <div className='content-seller-form'>
             <form className='form'>
