@@ -10,3 +10,16 @@
     font-size: .8rem;
     margin: auto;
 }
+
+.button-disabled {
+    width: 130px;
+    height: 35px;
+    border-radius: 10px;
+    outline: none;
+    background-color: var(--gray-bg-color);
+    color: var(--white-bg-color);
+    border: none;
+    cursor: pointer;
+    font-size: .8rem;
+    margin: auto;
+}

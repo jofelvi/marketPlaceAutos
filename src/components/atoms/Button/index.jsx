@@ -3,10 +3,11 @@ import './styles.css'
 
 const Button = ({
     label = '$ 5000',
-    onClick
+    disabled,
+    onClick,
 }) => {
     return (
-        <button className='button' onClick={onClick}>{label}</button>
+        <button className={disabled ? 'button-disabled' : 'button'} disabled={disabled} onClick={onClick}>{label}</button>
     )
 }
 

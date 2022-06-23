@@ -1,0 +1,33 @@
+.content-step-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.content-step-2 .content-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.content-step-2 .content-title img {
+    width: 40px;
+}
+
+.content-step-2 .content-title p {
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+
+.content-step-2 .content-inputs-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content-step-2 button {
+    margin-top: 20px;
+}

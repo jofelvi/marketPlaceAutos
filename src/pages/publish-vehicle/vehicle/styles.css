@@ -1,11 +1,12 @@
 .content-info-vehicle {
     width: 80%;
-    min-height: 300px;
+    max-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: auto;
+    overflow: auto;
 }
 
 .bg-gray {
@@ -60,7 +61,7 @@
 }
 
 .content-info-vehicle .step-ready .content-column-70 .content-info p {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .content-info-vehicle .step-ready .content-column-30 {

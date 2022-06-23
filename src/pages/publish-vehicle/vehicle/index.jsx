@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
 import VehicleStepOne from './stepOne';
-import StepReady from './stepReady';
+import VehicleStepTwo from './stepTwo';
+import VehicleStepThree from './stepThree';
+import VehicleStepFour from './stepFour';
 import './styles.css'
 
 const Vehicle = ({ formik }) => {
     const [values, setValues] = useState([]);
     const [stepOneReady, setStepOneReady] = useState(false);
-    // const [stepTwoReady, setStepTwoReady] = useState(false);
-    // const [stepThreeReady, setStepThreeReady] = useState(false);
-    // const [stepFourReady, setStepOnFourady] = useState(false);
-    // const [stepFiveReady, setStepOneFivedy] = useState(false);
-
+    const [stepTwoReady, setStepTwoReady] = useState(false);
+    const [stepThreeReady, setStepThreeReady] = useState(false);
+    const [stepFourReady, setStepFourReady] = useState(false);
     const [currentStep, setCurrentStep] = useState(0);
 
     const removeItem = (value) => {
@@ -95,23 +95,35 @@ const Vehicle = ({ formik }) => {
 
     return (
         <div className='content-info-vehicle'>
+            <VehicleStepOne
+                formik={formik}
+                values={values}
+                currentStep={currentStep}
+                stepOneReady={stepOneReady}
+                removeItem={removeItem}
+                onChangeBrand={onChangeBrand}
+                onChangeModel={onChangeModel}
+                onChangeYear={onChangeYear}
+                setStepOneReady={setStepOneReady}
+            />
 
-            {!stepOneReady ?
-                <VehicleStepOne
-                    values={values}
-                    currentStep={currentStep}
-                    onChangeBrand={onChangeBrand}
-                    onChangeModel={onChangeModel}
-                    onChangeYear={onChangeYear}
-                    removeItem={removeItem}
-                />
-                :
-                <StepReady
-                    currentStep={currentStep}
-                    values={values}
-                    editF={() => setStepOneReady(false)}
-                />
-            }
+            <VehicleStepTwo
+                formik={formik}
+                stepOneReady={stepTwoReady}
+                setStepOneReady={setStepTwoReady}
+            />
+
+            <VehicleStepThree
+                formik={formik}
+                stepOneReady={stepThreeReady}
+                setStepOneReady={setStepThreeReady}
+            />
+
+            <VehicleStepFour
+                formik={formik}
+                stepOneReady={stepFourReady}
+                setStepOneReady={setStepFourReady}
+            />
         </div>
     )
 }
