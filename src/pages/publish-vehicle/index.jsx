@@ -21,7 +21,6 @@ const PublishVehicle = () => {
                 !formik.errors.phone
             ) {
                 setCurrent(current + 1);
-                console.log(formik);
             }
         } else if (current === 1) {
             if (!formik.errors.model &&
@@ -36,7 +35,6 @@ const PublishVehicle = () => {
                 !formik.errors.year
             ) {
                 setCurrent(0)
-                console.log(data);
                 setFormData(data);
 
                 formik.resetForm();

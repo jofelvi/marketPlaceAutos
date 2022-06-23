@@ -9,6 +9,19 @@ export const initialValuesPublishVehicle = {
     model: '',
     year: '',
 
+    km: '',
+    state: '',
+    price: '',
+
+    cylinders: '',
+    owners: '',
+    inside_color: '',
+    outside_color: '',
+
+    description: '',
+
+
+
 }
 
 export const validatePublishVehicleStepOne = (data) => {
@@ -50,6 +63,36 @@ export const validatePublishVehicleStepTwo = (data) => {
 
     if (!data.year) {
         errors.year = 'El año del vehículo es requerido.';
+    }
+    if (!data.km) {
+        errors.km = 'El kilometraje del vehículo es requerido.';
+    }
+
+    if (!data.state) {
+        errors.state = 'El estado del vehículo es requerido.';
+    }
+
+    if (!data.price) {
+        errors.price = 'El precio del vehículo es requerido.';
+    }
+    if (!data.cylinders) {
+        errors.cylinders = 'Los cilindros del vehículo son requeridos.';
+    }
+
+    if (!data.owners) {
+        errors.owners = 'Los dueños del vehículo son requeridos.';
+    }
+
+    if (!data.inside_color) {
+        errors.inside_color = 'El color interior del vehículo es requerido.';
+    }
+
+    if (!data.outside_color) {
+        errors.outside_color = 'El color exterior del vehículo es requerido.';
+    }
+
+    if (!data.description) {
+        errors.description = 'La descripción del vehículo es requerida.';
     }
 
     return errors;

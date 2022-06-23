@@ -1,13 +1,17 @@
 import React from 'react'
 import Select from '../../../../components/atoms/Select'
+import StepReady from '../stepReady';
 
 const VehicleStepOne = ({
     values,
+    formik,
     currentStep,
+    stepOneReady,
     removeItem,
     onChangeBrand,
     onChangeModel,
-    onChangeYear
+    onChangeYear,
+    setStepOneReady
 }) => {
     const options = [
         {
@@ -43,41 +47,59 @@ const VehicleStepOne = ({
     ];
     return (
         <>
-            <div className="content-items">
-                {values.map((item, key) => (
-                    <div className="content-item" key={key}>
-                        <span>{item.value}</span>
-                        <img onClick={() => removeItem(item)} src="http://localhost:3000/assets/publish-vehicle/remove-item.svg" alt="" />
+            {!stepOneReady &&
+                <>
+                    <div className="content-items">
+                        {values.map((item, key) => (
+                            <div className="content-item" key={key}>
+                                <span>{item.value}</span>
+                                <img onClick={() => removeItem(item)} src="http://localhost:3000/assets/publish-vehicle/remove-item.svg" alt="" />
+                            </div>
+                        ))}
+
                     </div>
-                ))}
 
-            </div>
+                    <div className="selector">
+                        {currentStep === 0 &&
+                            <Select
+                                name='brand'
+                                options={options}
+                                onChange={onChangeBrand}
+                                error={formik.errors.brand}
+                                label={formik.errors.brand}
+                            />
+                        }
 
-            <div className="selector">
-                {currentStep === 0 &&
-                    <Select
-                        name='brand'
-                        options={options}
-                        onChange={onChangeBrand}
-                    />
-                }
+                        {currentStep === 1 &&
+                            <Select
+                                name='model'
+                                options={models}
+                                onChange={onChangeModel}
+                                error={formik.errors.model}
+                                label={formik.errors.model}
+                            />
+                        }
 
-                {currentStep === 1 &&
-                    <Select
-                        name='model'
-                        options={models}
-                        onChange={onChangeModel}
-                    />
-                }
+                        {currentStep === 2 &&
+                            <Select
+                                name='year'
+                                options={years}
+                                onChange={onChangeYear}
+                                error={formik.errors.year}
+                                label={formik.errors.year}
+                            />
+                        }
+                    </div>
+                </>
+            }
 
-                {currentStep === 2 &&
-                    <Select
-                        name='year'
-                        options={years}
-                        onChange={onChangeYear}
-                    />
-                }
-            </div>
+            {stepOneReady &&
+                <StepReady
+                    currentStep={currentStep}
+                    values={values}
+                    editF={() => setStepOneReady(false)}
+                />
+            }
         </>
     )
 }

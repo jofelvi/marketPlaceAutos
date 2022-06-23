@@ -26,6 +26,22 @@
     cursor: pointer;
 }
 
+.content-select-error label {
+    text-align: start;
+    font-size: .8rem;
+    color: var(--red-bg-color);
+}
+
+.content-select-error select {
+    width: 200px;
+    height: 40px;
+    outline: none;
+    border: 1px solid var(--red-bg-color);
+    color: var(--blredue-bg-color);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
 .ajust-select {
     margin-top: 15px;
 }

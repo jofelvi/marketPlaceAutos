@@ -7,13 +7,14 @@ const Select = ({
     label,
     options,
     disabled,
+    error,
     selectTransparent,
-    onChange
+    onChange,
 }) => {
     return (
-        <div className={selectTransparent ? 'content-select-transparent' : 'content-select'}>
+        <div className={selectTransparent ? 'content-select-transparent' : error ? 'content-select-error' : 'content-select'}>
             {label && <label>{label}</label>}
-            <select className={!label ? 'ajust-select': ''} name={name} value={value} onChange={onChange} disabled={disabled}>
+            <select className={!label ? 'ajust-select' : ''} name={name} value={value} onChange={onChange} disabled={disabled}>
                 {options.map((option, key) => (
                     <option key={key} value={option.value}>{option.name}</option>
                 ))}

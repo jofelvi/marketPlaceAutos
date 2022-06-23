@@ -12,9 +12,9 @@ const StepReady = ({
 
                 <div className="content-info">
                     {currentStep === 3 && <p>Estás vendiendo:</p>}
-                    <li>{values[0].value}</li>
-                    <li>{values[1].value}</li>
-                    <li>{values[2].value}</li>
+                    {values.map((value, key) => (
+                        <li key={key}>{value.value}</li>
+                    ))}
                 </div>
             </div>
             <div className="content-column-30">
