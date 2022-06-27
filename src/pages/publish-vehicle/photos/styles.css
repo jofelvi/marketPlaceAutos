@@ -1,0 +1,20 @@
+.content-uploads {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    padding: 50px 0px 50px 0px;
+}
+
+.content-uploads .upload-image {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid var(--blue-bg-color);
+    cursor: pointer;
+}
