@@ -5,7 +5,7 @@ import Photos from './photos';
 import Vehicle from './vehicle';
 import './styles.css'
 import useOnChange from '../../hooks/useOnChange';
-import { initialValuesPublishVehicle, validatePublishVehicleStepOne, validatePublishVehicleStepTwo } from '../../utils/publish-vehicle/validatePublishVehicle';
+import { initialValuesPublishVehicle, validatePublishVehicleStepOne, validatePublishVehicleStepThree, validatePublishVehicleStepTwo } from '../../utils/publish-vehicle/validatePublishVehicle';
 
 const { Step } = Steps;
 
@@ -42,7 +42,7 @@ const PublishVehicle = () => {
         }
     };
 
-    const checkValidateErrors = current === 0 ? validatePublishVehicleStepOne : current === 1 ? validatePublishVehicleStepTwo : current === 2 ? validatePublishVehicleStepOne : null;
+    const checkValidateErrors = current === 0 ? validatePublishVehicleStepOne : current === 1 ? validatePublishVehicleStepTwo : current === 2 ? validatePublishVehicleStepThree : null;
 
     const { formik, setFormData } = useOnChange(initialValuesPublishVehicle, checkValidateErrors, next);
 
