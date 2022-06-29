@@ -20,6 +20,10 @@ export const initialValuesPublishVehicle = {
 
     description: '',
 
+    imgFront: null,
+    imgLeft: null,
+    imgRight: null
+
 
 
 }
@@ -93,6 +97,24 @@ export const validatePublishVehicleStepTwo = (data) => {
 
     if (!data.description) {
         errors.description = 'La descripción del vehículo es requerida.';
+    }
+
+    return errors;
+}
+
+export const validatePublishVehicleStepThree = (data) => {
+    let errors = {};
+
+    if (!data.imgFront) {
+        errors.imgFront = 'La imagen frontal del vehículo es requerida.';
+    }
+
+    if (!data.imgLeft) {
+        errors.imgLeft = 'La imagen lateral izquierda del vehículo es requerida.';
+    }
+
+    if (!data.imgRight) {
+        errors.imgRight = 'La imagen lateral derecha del vehículo es requerida.';
     }
 
     return errors;
