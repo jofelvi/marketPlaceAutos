@@ -1,87 +1,107 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
+import { useLocation, useParams } from 'react-router-dom'
 import Button from '../../components/atoms/Button/Button'
-import { dummyImages, dummyInfoCar } from '../../utils/dummyImages'
+import { getInfoVehicleById } from '../../store/vehicles/action'
 import './styles.css'
 
 const DetailsCars = () => {
+    const { id } = useParams();
+    const dispatch = useDispatch();
+    const { selectedVehicle } = useSelector(state => state.vehicles);
+
+
+
+    const redirectWhatsapp = () => {
+        let url = `https://wa.me/584120000000`
+        window.open(url, '_blank');
+    }
+
+    useEffect(() => {
+        if (selectedVehicle) return
+        dispatch(getInfoVehicleById(id))
+        //eslint-disable-next-line
+    }, []);
+
     return (
         <div className='content-details-car'>
-            <div className="content-images">
-                <div className="img-full">
-                    <img src="/assets/motos/fullscreen.jpg" alt="" />
-                </div>
+            {selectedVehicle &&
+                <>
+                    <div className="content-images">
+                        <div className="img-full">
+                            <img src={selectedVehicle?.image} alt="" />
+                        </div>
 
-                <div className="more-images">
-                    {dummyImages.map((img, key) => (
-                        <img key={key} src={img.url} />
-                    ))}
-                </div>
+                        <div className="more-images">
+                            {selectedVehicle?.moreImages?.map((img, key) => (
+                                <img key={key} src={img.url} />
+                            ))}
+                        </div>
 
-                <div className="content-detail-buttons">
-                    <Button label='Datos del vendedor' />
-                    <Button label='Hacer pregunta' />
-                </div>
-            </div>
-            <div className="content-info-car">
-                <div className="content-info">
-                    <div className='header-info'>
-                        <p>Detalles del vehículo</p>
+                        <div className="content-detail-buttons">
+                            <Button label='Datos del vendedor' />
+                            <Button label='Hacer pregunta' />
+                        </div>
                     </div>
-                    <div className='info'>
-                        <p className='label'>Precio: </p>
-                        <p>{dummyInfoCar.price}</p>
-                    </div>
-                    <div className='info'>
-                        <p className='label'>Tipo: </p>
-                        <p>{dummyInfoCar.type}</p>
-                    </div>
-                    <div className='info'>
-                        <p className='label'>Concesionario: </p>
-                        <p>{dummyInfoCar.concessionaire}</p>
-                    </div>
-                    <div className='info'>
-                        <p className='label'>Transmisión: </p>
-                        <p>{dummyInfoCar.transmition}</p>
-                    </div>
-                    <div className='info'>
-                        <p className='label'>Ubicación: </p>
-                        <p>{dummyInfoCar.ubication}</p>
-                    </div>
-                    <div className='info'>
-                        <p className='label'>Color: </p>
-                        <p>{dummyInfoCar.color}</p>
-                    </div>
-                    <div className='info'>
-                        <p className='label'>Marca: </p>
-                        <p>{dummyInfoCar.brand}</p>
-                    </div>
-                    <div className='info'>
-                        <p className='label'>Dirección: </p>
-                        <p>{dummyInfoCar.direction}</p>
-                    </div>
-                    <div className='info'>
-                        <p className='label'>Año: </p>
-                        <p>{dummyInfoCar.year}</p>
-                    </div>
-                    <div className='info'>
-                        <p className='label'>Kilometraje: </p>
-                        <p>{dummyInfoCar.km}</p>
-                    </div>
-                    <div className='info'>
-                        <p className='label'>Puertas:</p>
-                        <p>{dummyInfoCar.doors}</p>
-                    </div>
-                    <div className='info'>
-                        <p className='label'>Estado: </p>
-                        <p>{dummyInfoCar.state}</p>
-                    </div>
-                </div>
+                    <div className="content-info-car">
+                        <div className="content-info">
+                            <div className='header-info'>
+                                <p>Detalles del vehículo</p>
+                            </div>
+                            <div className='info'>
+                                <p className='label'>Precio: </p>
+                                <p>{selectedVehicle?.price}</p>
+                            </div>
+                            <div className='info'>
+                                <p className='label'>Tipo: </p>
+                                <p>{selectedVehicle?.type}</p>
+                            </div>
+                            <div className='info'>
+                                <p className='label'>Concesionario: </p>
+                                <p>{selectedVehicle?.concessionaire}</p>
+                            </div>
+                            <div className='info'>
+                                <p className='label'>Transmisión: </p>
+                                <p>{selectedVehicle.transmition}</p>
+                            </div>
+                            <div className='info'>
+                                <p className='label'>Ubicación: </p>
+                                <p>{selectedVehicle?.ubication}</p>
+                            </div>
+                            <div className='info'>
+                                <p className='label'>Color: </p>
+                                <p>{selectedVehicle?.color}</p>
+                            </div>
+                            <div className='info'>
+                                <p className='label'>Marca: </p>
+                                <p>{selectedVehicle?.brand}</p>
+                            </div>
+                            <div className='info'>
+                                <p className='label'>Año: </p>
+                                <p>{selectedVehicle?.year}</p>
+                            </div>
+                            <div className='info'>
+                                <p className='label'>Kilometraje: </p>
+                                <p>{selectedVehicle?.km}</p>
+                            </div>
+                            <div className='info'>
+                                <p className='label'>Puertas:</p>
+                                <p>{selectedVehicle?.doors}</p>
+                            </div>
+                            <div className='info'>
+                                <p className='label'>Estado: </p>
+                                <p>{selectedVehicle?.state}</p>
+                            </div>
+                        </div>
 
-                <div className="content-contact-buttons">
-                    <button><img src="/assets/whatsapp.svg" />Contactar por whatsapp</button>
-                    <button><img src="/assets/phone.svg" />Llamada telefónica</button>
-                </div>
-            </div>
+                        <div className="content-contact-buttons">
+                            <button onClick={redirectWhatsapp}><img src="/assets/whatsapp.svg" />Contactar por whatsapp</button>
+                            <button><img src="/assets/phone.svg" />Llamada telefónica</button>
+                        </div>
+                    </div>
+                </>
+            }
         </div>
     )
 }
