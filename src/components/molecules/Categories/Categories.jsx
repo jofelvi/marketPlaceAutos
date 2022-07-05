@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { items } from '../../../utils/categories'
-import './styles.css'
+import './CategoriesStyles.css'
 
 const Categories = () => {
     const navigate = useNavigate();

@@ -1,8 +1,9 @@
 import React from 'react'
 import { BsTagFill } from 'react-icons/bs'
-import Input from '../../../../components/atoms/Input'
-import Button from '../../../../components/atoms/Button'
+import Input from '../../../../components/atoms/Input/Input'
+import Button from '../../../../components/atoms/Button/Button'
 import StepReady from '../stepReady'
+import Select from '../../../../components/atoms/Select/Select'
 import './styles.css'
 
 const VehicleStepTwo = ({
@@ -15,7 +16,7 @@ const VehicleStepTwo = ({
             {!stepOneReady &&
                 <div className="content-step-2">
                     <div className="content-title">
-                        <img src="http://localhost:3000/assets/publish-vehicle/dontCheck.svg" alt="" />
+                        <img src="/assets/publish-vehicle/dontCheck.svg" alt="" />
                         <p>Detalles principales:</p>
                     </div>
                     <div className="content-inputs-2">
@@ -31,16 +32,28 @@ const VehicleStepTwo = ({
                             Icon={BsTagFill}
                         />
 
-                        <Input
+                        <Select
                             name='state'
-                            type='text'
-                            placeholder='Estado'
-                            onChange={formik.handleChange}
-                            value={formik.values.state}
                             formik={formik}
-                            width='250px'
-                            left='20px'
+                            value={formik.values.state}
+                            selectBorder
                             Icon={BsTagFill}
+                            onChange={formik.handleChange}
+                            defaultValue='Estado del vehículo'
+                            options={[
+                                {
+                                    name: 'Estado del vehículo',
+                                    value: ''
+                                },
+                                {
+                                    name: 'Nuevo',
+                                    value: 'new'
+                                },
+                                {
+                                    name: 'Usado',
+                                    value: 'used'
+                                }
+                            ]}
                         />
 
                         <Input

@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { AiOutlineHeart } from 'react-icons/ai'
 import { BsTagFill } from 'react-icons/bs'
 import { HiIdentification } from 'react-icons/hi'
 import { TbSteeringWheel } from 'react-icons/tb'
 import { useNavigate } from 'react-router-dom'
-import Button from '../../atoms/Button'
-import './styles.css'
+import Button from '../../atoms/Button/Button'
+import './CardStyles.css'
 
 const Card = ({
     id,

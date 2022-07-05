@@ -1,11 +1,11 @@
 import React from 'react'
 import { TiLockClosed } from 'react-icons/ti'
 import { ImUser } from 'react-icons/im'
-import Input from '../../atoms/Input'
-import './styles.css'
+import Input from '../../atoms/Input/Input'
 import { useNavigate } from 'react-router-dom'
 import useOnChange from '../../../hooks/useOnChange'
 import { initialValuesLogin, validateLogin } from '../../../utils/login/validateLogin'
+import './LoginFormStyles.css'
 
 const LoginForm = () => {
     const navigate = useNavigate();

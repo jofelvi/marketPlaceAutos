@@ -1,15 +1,20 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Steps } from 'antd';
 import DataUser from './data-user';
 import Photos from './photos';
 import Vehicle from './vehicle';
-import './styles.css'
 import useOnChange from '../../hooks/useOnChange';
 import { initialValuesPublishVehicle, validatePublishVehicleStepOne, validatePublishVehicleStepThree, validatePublishVehicleStepTwo } from '../../utils/publish-vehicle/validatePublishVehicle';
+import { getCities } from '../../store/ubications/action';
+import { useDispatch } from 'react-redux';
+import { successModal } from '../../store/notifications/actions';
+import Modal from '../../components/molecules/Modal/Modal';
+import './styles.css'
 
 const { Step } = Steps;
 
 const PublishVehicle = () => {
+    const dispatch = useDispatch();
     const [current, setCurrent] = useState(0);
 
     const next = (data) => {        
@@ -30,14 +35,18 @@ const PublishVehicle = () => {
                 setCurrent(current + 1);
             }
         } else if (current === 2) {
-            if (!formik.errors.model &&
-                !formik.errors.brand &&
-                !formik.errors.year
+            if (!formik.errors.imgFront &&
+                !formik.errors.imgLeft &&
+                !formik.errors.imgRight
             ) {
-                setCurrent(0)
-                setFormData(data);
-
                 formik.resetForm();
+                setCurrent(0);
+                setFormData(data);
+                dispatch(successModal({
+                    title: 'Su vehículo ha sido publicado',
+                    image: '/assets/publish-vehicle/publish-car.svg',
+                    type: 'success'
+                }))
             }
         }
     };
@@ -65,6 +74,11 @@ const PublishVehicle = () => {
             content: <Photos formik={formik} />,
         },
     ];
+
+    useEffect(() => {
+        dispatch(getCities())
+        //eslint-disable-next-line
+    }, []);
 
     return (
         <div>
@@ -149,6 +163,7 @@ const PublishVehicle = () => {
                     </div>
                 </div>
             </div>
+            <Modal/>
         </div>
     )
 }

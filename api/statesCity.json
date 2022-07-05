@@ -1,0 +1,36 @@
+{
+    "results": [
+        {
+            "name": "Ubicación",
+            "value": ""
+        },
+        {
+            "name": "Caracas",
+            "value": "Caracas"
+        },
+        {
+            "name": "Valencia",
+            "value": "Valencia"
+        },
+        {
+            "name": "Maracay",
+            "value": "Maracay"
+        },
+        {
+            "name": "Zulia",
+            "value": "Zulia"
+        },
+        {
+            "name": "Bolivar",
+            "value": "Bolivar"
+        },
+        {
+            "name": "Falcón",
+            "value": "Falcón"
+        },
+        {
+            "name": "Merida",
+            "value": "Merida"
+        }
+    ]
+}

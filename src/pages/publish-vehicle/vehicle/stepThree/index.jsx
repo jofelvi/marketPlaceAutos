@@ -1,7 +1,7 @@
 import React from 'react'
 import { BsTagFill } from 'react-icons/bs'
-import Input from '../../../../components/atoms/Input'
-import Button from '../../../../components/atoms/Button'
+import Input from '../../../../components/atoms/Input/Input'
+import Button from '../../../../components/atoms/Button/Button'
 import StepReady from '../stepReady'
 
 const VehicleStepThree = ({
@@ -14,7 +14,7 @@ const VehicleStepThree = ({
             {!stepOneReady &&
                 <div className="content-step-2">
                     <div className="content-title">
-                        <img src="http://localhost:3000/assets/publish-vehicle/dontCheck.svg" alt="" />
+                        <img src="/assets/publish-vehicle/dontCheck.svg" alt="" />
                         <p>Detalles del auto:</p>
                     </div>
                     <div className="content-inputs-2">
@@ -43,21 +43,9 @@ const VehicleStepThree = ({
                         />
 
                         <Input
-                            name='inside_color'
-                            type='text'
-                            placeholder='Color interior'
-                            onChange={formik.handleChange}
-                            value={formik.values.inside_color}
-                            formik={formik}
-                            width='250px'
-                            left='20px'
-                            Icon={BsTagFill}
-                        />
-
-                        <Input
                             name='outside_color'
                             type='text'
-                            placeholder='Color exterior'
+                            placeholder='Color'
                             onChange={formik.handleChange}
                             value={formik.values.outside_color}
                             formik={formik}

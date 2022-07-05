@@ -1,5 +1,5 @@
 import React from 'react'
-import Select from '../../../../components/atoms/Select'
+import Select from '../../../../components/atoms/Select/Select'
 import StepReady from '../stepReady';
 
 const VehicleStepOne = ({
@@ -53,7 +53,7 @@ const VehicleStepOne = ({
                         {values.map((item, key) => (
                             <div className="content-item" key={key}>
                                 <span>{item.value}</span>
-                                <img onClick={() => removeItem(item)} src="http://localhost:3000/assets/publish-vehicle/remove-item.svg" alt="" />
+                                <img onClick={() => removeItem(item)} src="/assets/publish-vehicle/remove-item.svg" alt="" />
                             </div>
                         ))}
 

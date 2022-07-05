@@ -1,8 +1,8 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom'
 import { cars } from '../../../utils/recentCars'
-import Card from '../../molecules/Card'
-import './styles.css'
+import Card from '../../molecules/Card/Card'
+import './RecentCarsStyles.css'
 
 const RecentCars = () => {
     const location = useLocation();

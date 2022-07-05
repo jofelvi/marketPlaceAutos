@@ -4,10 +4,10 @@ import { HiIdentification } from 'react-icons/hi'
 import { ImUser } from 'react-icons/im'
 import { TiLockClosed } from 'react-icons/ti'
 import { BiWorld } from 'react-icons/bi'
-import Input from '../../atoms/Input'
-import './styles.css'
+import Input from '../../atoms/Input/Input'
 import { initialValuesSeller, validateSeller } from '../../../utils/register/validateRegister'
 import useOnChange from '../../../hooks/useOnChange'
+import './SellerFormStyles.css'
 
 const SellerForm = () => {
     const navigate = useNavigate();

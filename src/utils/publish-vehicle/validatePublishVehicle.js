@@ -1,3 +1,5 @@
+import { regexEmail, regexNumber, regexString } from "../regex";
+
 export const initialValuesPublishVehicle = {
     first_name: '',
     last_name: '',
@@ -23,9 +25,6 @@ export const initialValuesPublishVehicle = {
     imgFront: null,
     imgLeft: null,
     imgRight: null
-
-
-
 }
 
 export const validatePublishVehicleStepOne = (data) => {
@@ -33,14 +32,20 @@ export const validatePublishVehicleStepOne = (data) => {
 
     if (!data.first_name) {
         errors.first_name = 'El nombre es requerido.';
+    } else if (!regexString.test(data.first_name)) {
+        errors.first_name = 'El nombre es sólo debe contener letras.';
     }
 
     if (!data.last_name) {
         errors.last_name = 'El apellido es requerido.';
+    } else if (!regexString.test(data.last_name)) {
+        errors.last_name = 'El apellido es sólo debe contener letras.';
     }
 
     if (!data.email) {
         errors.email = 'El correo electrónico es requerido.';
+    } else if (!regexEmail.test(data.email)) {
+        errors.email = 'Por favor ingrese un correo válido.';
     }
 
     if (!data.ubication) {
@@ -49,6 +54,8 @@ export const validatePublishVehicleStepOne = (data) => {
 
     if (!data.phone) {
         errors.phone = 'El número telefónico es requerido.';
+    } else if (!regexNumber.test(data.phone)) {
+        errors.phone = 'Por favor agregue un teléfono válido';
     }
 
     return errors;
@@ -70,6 +77,8 @@ export const validatePublishVehicleStepTwo = (data) => {
     }
     if (!data.km) {
         errors.km = 'El kilometraje del vehículo es requerido.';
+    } else if (!regexNumber.test(data.km)) {
+        errors.km = 'Por favor indique un kilometraje válido.';
     }
 
     if (!data.state) {
@@ -78,21 +87,26 @@ export const validatePublishVehicleStepTwo = (data) => {
 
     if (!data.price) {
         errors.price = 'El precio del vehículo es requerido.';
+    } else if (!regexNumber.test(data.price)) {
+        errors.price = 'Por favor indique un monto válido.';
     }
+
     if (!data.cylinders) {
         errors.cylinders = 'Los cilindros del vehículo son requeridos.';
+    } else if (!regexNumber.test(data.cylinders)) {
+        errors.cylinders = 'Este campo sólo acepta números.';
     }
 
     if (!data.owners) {
         errors.owners = 'Los dueños del vehículo son requeridos.';
-    }
-
-    if (!data.inside_color) {
-        errors.inside_color = 'El color interior del vehículo es requerido.';
+    } else if (!regexNumber.test(data.owners)) {
+        errors.owners = 'Este campo sólo acepta números.';
     }
 
     if (!data.outside_color) {
-        errors.outside_color = 'El color exterior del vehículo es requerido.';
+        errors.outside_color = 'El color del vehículo es requerido.';
+    } else if (!regexString.test(data.outside_color)) {
+        errors.outside_color = 'Este campo sólo acepta letras.';
     }
 
     if (!data.description) {

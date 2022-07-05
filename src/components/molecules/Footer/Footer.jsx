@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaFacebookSquare, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 import { BsFillTelephoneFill } from 'react-icons/bs'
-import './styles.css'
+import './FooterStyles.css'
 
 const Footer = () => {
     return (

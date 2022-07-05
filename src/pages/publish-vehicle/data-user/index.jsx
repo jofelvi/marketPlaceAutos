@@ -1,12 +1,17 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import { BiWorld } from 'react-icons/bi'
 import { HiIdentification } from 'react-icons/hi'
 import { ImUser } from 'react-icons/im'
 import { BsFillTelephoneFill } from 'react-icons/bs'
-import Input from '../../../components/atoms/Input'
+import Input from '../../../components/atoms/Input/Input'
+import Select from '../../../components/atoms/Select/Select'
 import './styles.css'
+import { Formik, Form, Field, ErrorMessage } from "formik";
 
 const DataUser = ({ formik }) => {
+    const { cities } = useSelector(state => state.ubications);
+
     return (
         <div className='content-form-data'>
             <form className='form'>
@@ -34,27 +39,13 @@ const DataUser = ({ formik }) => {
                         width='250px'
                         left='20px'
                     />
-
                     <Input
                         name='email'
-                        type='email'
                         placeholder='Correo Electrónico'
                         onChange={formik.handleChange}
                         value={formik.values.email}
                         formik={formik}
                         Icon={HiIdentification}
-                        width='250px'
-                        left='20px'
-                    />
-
-                    <Input
-                        name='ubication'
-                        type='text'
-                        placeholder='Ubicación'
-                        onChange={formik.handleChange}
-                        value={formik.values.ubication}
-                        formik={formik}
-                        Icon={BiWorld}
                         width='250px'
                         left='20px'
                     />
@@ -69,6 +60,16 @@ const DataUser = ({ formik }) => {
                         Icon={BsFillTelephoneFill}
                         width='250px'
                         left='20px'
+                    />
+
+                    <Select
+                        name='ubication'
+                        formik={formik}
+                        value={formik.values.ubication}
+                        selectBorder
+                        Icon={BiWorld}
+                        onChange={formik.handleChange}
+                        options={cities}
                     />
 
                 </div>
