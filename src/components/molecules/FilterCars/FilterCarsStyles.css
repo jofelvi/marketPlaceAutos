@@ -1,6 +1,6 @@
 .content-filter {
     width: 60%;
-    height: 150px;
+    height: 200px;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     position: absolute;
@@ -17,6 +17,8 @@
     margin: auto;
     display: flex;
     justify-content: center;
+    background-color: var(--white-bg-color);
+    border-radius: 10px;
 }
 
 .content-selects-transparent {
@@ -45,7 +47,7 @@
     }
 
     .content-selects-transparent {
-        width: 80%;
+        width: 90%;
     }
 }
 

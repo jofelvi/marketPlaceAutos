@@ -8,7 +8,7 @@ const StepReady = ({
     return (
         <div className="step-ready">
             <div className="content-column-70">
-                <img src="http://localhost:3000/assets/publish-vehicle/check.svg" alt="" />
+                <img src="/assets/publish-vehicle/check.svg" alt="" />
 
                 <div className="content-info">
                     {currentStep === 3 && <p>Estás vendiendo:</p>}

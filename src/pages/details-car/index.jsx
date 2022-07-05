@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../../components/atoms/Button'
+import Button from '../../components/atoms/Button/Button'
 import { dummyImages, dummyInfoCar } from '../../utils/dummyImages'
 import './styles.css'
 
@@ -8,7 +8,7 @@ const DetailsCars = () => {
         <div className='content-details-car'>
             <div className="content-images">
                 <div className="img-full">
-                    <img src="http://localhost:3000/assets/motos/fullscreen.jpg" alt="" />
+                    <img src="/assets/motos/fullscreen.jpg" alt="" />
                 </div>
 
                 <div className="more-images">
@@ -78,8 +78,8 @@ const DetailsCars = () => {
                 </div>
 
                 <div className="content-contact-buttons">
-                    <button><img src="http://localhost:3000/assets/whatsapp.svg" />Contactar por whatsapp</button>
-                    <button><img src="http://localhost:3000/assets/phone.svg" />Llamada telefónica</button>
+                    <button><img src="/assets/whatsapp.svg" />Contactar por whatsapp</button>
+                    <button><img src="/assets/phone.svg" />Llamada telefónica</button>
                 </div>
             </div>
         </div>

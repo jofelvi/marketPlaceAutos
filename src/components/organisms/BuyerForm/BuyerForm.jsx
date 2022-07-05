@@ -3,10 +3,10 @@ import { useNavigate } from 'react-router-dom'
 import { ImUser } from 'react-icons/im'
 import { TiLockClosed } from 'react-icons/ti'
 import { HiIdentification } from 'react-icons/hi'
-import Input from '../../atoms/Input'
-import './styles.css'
+import Input from '../../atoms/Input/Input'
 import useOnChange from '../../../hooks/useOnChange'
 import { initialValuesBuyer, validateBuyer } from '../../../utils/register/validateRegister'
+import './BuyerFormStyles.css'
 
 const BuyerForm = () => {
     const navigate = useNavigate();

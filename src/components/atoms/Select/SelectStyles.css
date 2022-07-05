@@ -11,13 +11,45 @@
     border-bottom-left-radius: 10px;
 }
 
+.content-select-border {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: var(--blue-bg-color);
+    margin-top: 40px;
+}
+
+.content-select-border-error {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: var(--red-bg-color);
+    margin-top: 40px;
+}
+
+.content-select-border .icon {
+    position: relative;
+    left: 20px;
+    z-index: 1;
+}
+
+.content-select-border-error .icon-red {
+    position: relative;
+    left: 20px;
+    z-index: 1;
+}
+
 .content-select label {
     text-align: start;
     font-size: .8rem;
     color: var(--blue-bg-color);
 }
 
-.content-select select {
+.content-select .select {
     width: 100%;
     height: 50px;
     outline: none;
@@ -26,13 +58,39 @@
     cursor: pointer;
 }
 
+.content-select-border .select-border {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: 2px solid var(--blue-bg-color);
+    color: var(--blue-bg-color);
+    cursor: pointer;
+    border-radius: 10px;
+    padding-left: 30px;
+    position: relative;
+    right: 10px;
+}
+
+.content-select-border-error .select-border {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: 2px solid var(--red-bg-color);
+    color: var(--red-bg-color);
+    cursor: pointer;
+    border-radius: 10px;
+    padding-left: 30px;
+    position: relative;
+    right: 10px;
+}
+
 .content-select-error label {
     text-align: start;
     font-size: .8rem;
     color: var(--red-bg-color);
 }
 
-.content-select-error select {
+.content-select-error .select {
     width: 200px;
     height: 40px;
     outline: none;
@@ -43,7 +101,7 @@
 }
 
 .ajust-select {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .content-select-transparent {
@@ -54,7 +112,7 @@
     padding: 10px;
 }
 
-.content-select-transparent select {
+.content-select-transparent .select {
     width: 100%;
     height: 20px;
     outline: none;
@@ -80,7 +138,7 @@
         display: none;
     }
 
-    .content-select select {
+    .content-select .select {
         border-radius: 10px;
     }
 

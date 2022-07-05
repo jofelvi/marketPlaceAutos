@@ -1,5 +1,5 @@
 import React from 'react'
-import SellerForm from '../../../components/organisms/SellerForm'
+import SellerForm from '../../../components/organisms/SellerForm/SellerForm'
 import './styles.css'
 
 const Seller = () => {

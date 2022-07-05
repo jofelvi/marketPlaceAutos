@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../../../../components/atoms/Button'
+import Button from '../../../../components/atoms/Button/Button'
 import StepReady from '../stepReady'
 import './styles.css'
 
@@ -13,7 +13,7 @@ const VehicleStepFour = ({
             {!stepOneReady &&
                 <div className="content-step-2">
                     <div className="content-title">
-                        <img src="http://localhost:3000/assets/publish-vehicle/dontCheck.svg" alt="" />
+                        <img src="/assets/publish-vehicle/dontCheck.svg" alt="" />
                         <p>Descripción del auto:</p>
                     </div>
                     <div className="content-textarea">

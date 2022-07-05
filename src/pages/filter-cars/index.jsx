@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Button from '../../components/atoms/Button'
-import RecentCars from '../../components/molecules/RecentCars'
-import Sidebar from '../../components/molecules/Sidebar'
+import Button from '../../components/atoms/Button/Button'
+import RecentCars from '../../components/molecules/RecentCars/RecentCars'
+import Sidebar from '../../components/molecules/Sidebar/Sidebar'
 import './styles.css'
 
 const FilterCars = () => {

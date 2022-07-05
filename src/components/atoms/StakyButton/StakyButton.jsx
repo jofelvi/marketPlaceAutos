@@ -1,6 +1,6 @@
 import React from 'react'
 import { IoMdChatboxes } from 'react-icons/io'
-import './styles.css'
+import './StakyButtonStyles.css'
 
 const StykyButton = () => {
     return (

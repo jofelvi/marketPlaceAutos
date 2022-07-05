@@ -1,6 +1,6 @@
 import React from 'react'
 import { itemsFilter } from './items'
-import './styles.css'
+import './SidebarStyles.css'
 
 const Sidebar = () => {
     return (

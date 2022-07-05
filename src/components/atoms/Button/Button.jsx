@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles.css'
+import './ButtonStyles.css'
 
 const Button = ({
     label = '$ 5000',

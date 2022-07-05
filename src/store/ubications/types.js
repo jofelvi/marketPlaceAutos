@@ -1,0 +1,3 @@
+export const GET_CITIES = "GET_CITIES";
+export const GET_CITIES_LOADING = "GET_CITIES_LOADING";
+export const GET_CITIES_ERROR = "GET_CITIES_ERROR";

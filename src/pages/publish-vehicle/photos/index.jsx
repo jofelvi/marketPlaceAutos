@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import DragOnDrop from '../../../components/atoms/DragOnDrop';
+import DragOnDrop from '../../../components/atoms/DragOnDrop/DragOnDrop';
 import './styles.css'
 
 const Photos = ({ formik }) => {

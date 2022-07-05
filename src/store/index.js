@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux'
-import sharedReducer, * as fromCart from './shared/reducer'
+import ubicationsReducer from './ubications/reducers'
+import notificationsReducer from './notifications/reducers'
 
 export default combineReducers({
-    shared: sharedReducer,
+    ubications: ubicationsReducer,
+    notifications: notificationsReducer
 })

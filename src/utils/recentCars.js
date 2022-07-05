@@ -7,7 +7,7 @@ export const cars = [
         year: 2010,
         transmition: 'Sincrónico',
         reserved: false,
-        image: 'http://localhost:3000/assets/car.jpeg',
+        image: '/assets/car.jpeg',
         effect: false
     },
     {
@@ -18,7 +18,7 @@ export const cars = [
         year: 2007,
         transmition: 'Automático',
         reserved: false,
-        image: 'http://localhost:3000/assets/car.jpeg',
+        image: '/assets/car.jpeg',
         effect: false
     },
     {
@@ -29,7 +29,7 @@ export const cars = [
         year: 2020,
         transmition: 'Sincrónico',
         reserved: true,
-        image: 'http://localhost:3000/assets/car.jpeg',
+        image: '/assets/car.jpeg',
         effect: false
     },
     {
@@ -40,7 +40,7 @@ export const cars = [
         year: 2005,
         transmition: 'Automático',
         reserved: false,
-        image: 'http://localhost:3000/assets/car.jpeg',
+        image: '/assets/car.jpeg',
         effect: false
     },
     {
@@ -51,7 +51,7 @@ export const cars = [
         year: 2000,
         transmition: 'Sincrónico',
         reserved: false,
-        image: 'http://localhost:3000/assets/car.jpeg',
+        image: '/assets/car.jpeg',
         effect: false
     },
     {
@@ -62,7 +62,7 @@ export const cars = [
         year: 2010,
         transmition: 'Automático',
         reserved: false,
-        image: 'http://localhost:3000/assets/car.jpeg',
+        image: '/assets/car.jpeg',
         effect: false
     },
 ]

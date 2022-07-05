@@ -1,6 +1,6 @@
 import React from 'react'
 import { getFormErrorMessage } from '../../../utils/getFormErrorMessage'
-import './styles.css'
+import './InputStyles.css'
 
 const Input = ({
     name,
@@ -14,7 +14,7 @@ const Input = ({
     Icon,
 }) => {
     return (
-        <div className="field">
+        <div>
             <div className="content-input" style={{ width: width }}>
 
                 <Icon className={formik?.errors[name] ? 'icon-red ' : 'icon'} size={22} style={{ left: left }} />

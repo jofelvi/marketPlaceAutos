@@ -1,8 +1,8 @@
 import React from 'react'
-import Image from '../../components/atoms/Image'
-import Categories from '../../components/molecules/Categories'
-import RecentCars from '../../components/molecules/RecentCars'
-import FilterCars from '../../components/molecules/FilterCars'
+import Image from '../../components/atoms/Image/Image'
+import Categories from '../../components/molecules/Categories/Categories'
+import RecentCars from '../../components/molecules/RecentCars/RecentCars'
+import FilterCars from '../../components/molecules/FilterCars/FilterCars'
 import banner from '../../../assets/las_mercedes.jpeg'
 import './styles.css'
 

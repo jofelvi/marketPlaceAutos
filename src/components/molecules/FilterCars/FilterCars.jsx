@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import Select from '../../atoms/Select'
-import './styles.css'
+import Select from '../../atoms/Select/Select'
+import './FilterCarsStyles.css'
 
 const FilterCars = () => {
     const navigate = useNavigate();
