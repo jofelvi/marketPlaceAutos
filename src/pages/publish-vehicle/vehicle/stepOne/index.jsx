@@ -1,6 +1,7 @@
 import React from 'react'
 import Select from '../../../../components/atoms/Select/Select'
 import StepReady from '../stepReady';
+import './styles.css'
 
 const VehicleStepOne = ({
     values,
@@ -48,7 +49,7 @@ const VehicleStepOne = ({
     return (
         <>
             {!stepOneReady &&
-                <>
+                <div className='content-step-one'>
                     <div className="content-items">
                         {values.map((item, key) => (
                             <div className="content-item" key={key}>
@@ -56,7 +57,6 @@ const VehicleStepOne = ({
                                 <img onClick={() => removeItem(item)} src="/assets/publish-vehicle/remove-item.svg" alt="" />
                             </div>
                         ))}
-
                     </div>
 
                     <div className="selector">
@@ -65,8 +65,7 @@ const VehicleStepOne = ({
                                 name='brand'
                                 options={options}
                                 onChange={onChangeBrand}
-                                error={formik.errors.brand}
-                                label={formik.errors.brand}
+                                formik={formik}
                             />
                         }
 
@@ -75,8 +74,7 @@ const VehicleStepOne = ({
                                 name='model'
                                 options={models}
                                 onChange={onChangeModel}
-                                error={formik.errors.model}
-                                label={formik.errors.model}
+                                formik={formik}
                             />
                         }
 
@@ -85,12 +83,11 @@ const VehicleStepOne = ({
                                 name='year'
                                 options={years}
                                 onChange={onChangeYear}
-                                error={formik.errors.year}
-                                label={formik.errors.year}
+                                formik={formik}
                             />
                         }
                     </div>
-                </>
+                </div>
             }
 
             {stepOneReady &&
