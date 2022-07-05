@@ -1,0 +1,274 @@
+{
+    "results": [
+        {
+            "id": 1,
+            "label": "Mitsubishi",
+            "brand": "Mitsubishi",
+            "price": 5000,
+            "model": "Lancer",
+            "year": 2010,
+            "transmition": "Sincrónico",
+            "doors": 4,
+            "concessionaire": "Mitsubishi",
+            "state": "Usado",
+            "color": "Azul",
+            "ubication": "Barquisimeto",
+            "km": 25000,
+            "type": "Autos",
+            "reserved": false,
+            "image": "https://www.autotrader.com/wp-content/uploads/2022/03/2008-Mitsubsihi-Lancer-Evolution-MR.jpg",
+            "moreImages": [
+                {
+                    "url": "/assets/motos/1.jpg"
+                },
+                {
+                    "url": "/assets/motos/2.jpg"
+                },
+                {
+                    "url": "/assets/motos/3.jpg"
+                },
+                {
+                    "url": "/assets/motos/4.jpg"
+                },
+                {
+                    "url": "/assets/motos/5.jpg"
+                },
+                {
+                    "url": "/assets/motos/6.jpg"
+                },
+                {
+                    "url": "/assets/motos/7.jpg"
+                },
+                {
+                    "url": "/assets/motos/8.jpg"
+                }
+            ],
+            "effect": false
+        },
+        {
+            "id": 2,
+            "label": "Hyundai",
+            "brand": "Hyundai",
+            "price": 3500,
+            "model": "Tucson",
+            "year": 2007,
+            "transmition": "Automático",
+            "doors": 5,
+            "concessionaire": "Hyundai",
+            "state": "Nuevo",
+            "color": "Azul - negro",
+            "ubication": "Caracas",
+            "km": 43000,
+            "type": "Autos",
+            "reserved": false,
+            "image": "https://cdn.motor1.com/images/mgl/pEeOJ/s1/hyundai-i20-n-2021.webp",
+            "moreImages": [
+                {
+                    "url": "/assets/motos/1.jpg"
+                },
+                {
+                    "url": "/assets/motos/2.jpg"
+                },
+                {
+                    "url": "/assets/motos/3.jpg"
+                },
+                {
+                    "url": "/assets/motos/4.jpg"
+                },
+                {
+                    "url": "/assets/motos/5.jpg"
+                },
+                {
+                    "url": "/assets/motos/6.jpg"
+                },
+                {
+                    "url": "/assets/motos/7.jpg"
+                },
+                {
+                    "url": "/assets/motos/8.jpg"
+                }
+            ],
+            "effect": false
+        },
+        {
+            "id": 3,
+            "label": "Toyota",
+            "brand": "Toyota",
+            "price": 9000,
+            "model": "Corolla",
+            "year": 2020,
+            "transmition": "Sincrónico",
+            "doors": 4,
+            "concessionaire": "Toyota",
+            "state": "Usado",
+            "color": "Blanco",
+            "ubication": "Valencia",
+            "km": 35000,
+            "type": "Autos",
+            "reserved": true,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Toyota_Corolla_Hybrid_CRI_10_2021_1615.jpg/1200px-Toyota_Corolla_Hybrid_CRI_10_2021_1615.jpg",
+            "moreImages": [
+                {
+                    "url": "/assets/motos/1.jpg"
+                },
+                {
+                    "url": "/assets/motos/2.jpg"
+                },
+                {
+                    "url": "/assets/motos/3.jpg"
+                },
+                {
+                    "url": "/assets/motos/4.jpg"
+                },
+                {
+                    "url": "/assets/motos/5.jpg"
+                },
+                {
+                    "url": "/assets/motos/6.jpg"
+                },
+                {
+                    "url": "/assets/motos/7.jpg"
+                },
+                {
+                    "url": "/assets/motos/8.jpg"
+                }
+            ],
+            "effect": false
+        },
+        {
+            "id": 4,
+            "label": "Mercedez",
+            "brand": "Mercedez",
+            "price": 12000,
+            "model": "s300",
+            "year": 2005,
+            "transmition": "Automático",
+            "doors": 4,
+            "concessionaire": "Autos VIP",
+            "state": "Usado",
+            "color": "Blanco",
+            "ubication": "Vargas",
+            "km": 150000,
+            "type": "Autos",
+            "reserved": false,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Mercedes-Benz_W206_IMG_4869.jpg/800px-Mercedes-Benz_W206_IMG_4869.jpg",
+            "moreImages": [
+                {
+                    "url": "/assets/motos/1.jpg"
+                },
+                {
+                    "url": "/assets/motos/2.jpg"
+                },
+                {
+                    "url": "/assets/motos/3.jpg"
+                },
+                {
+                    "url": "/assets/motos/4.jpg"
+                },
+                {
+                    "url": "/assets/motos/5.jpg"
+                },
+                {
+                    "url": "/assets/motos/6.jpg"
+                },
+                {
+                    "url": "/assets/motos/7.jpg"
+                },
+                {
+                    "url": "/assets/motos/8.jpg"
+                }
+            ],
+            "effect": false
+        },
+        {
+            "id": 5,
+            "label": "Mazda",
+            "brand": "Mazda",
+            "price": 2850,
+            "model": "3000",
+            "year": 2000,
+            "transmition": "Sincrónico",
+            "doors": 5,
+            "concessionaire": "Auto VIP",
+            "state": "Nuevo",
+            "color": "Rojo",
+            "ubication": "Maracay",
+            "km": 100,
+            "type": "Camionetas",
+            "reserved": false,
+            "image": "https://www.kbb.com/wp-content/uploads/2019/11/01-2019-mazda-cx-5-kbb-1.jpg",
+            "moreImages": [
+                {
+                    "url": "/assets/motos/1.jpg"
+                },
+                {
+                    "url": "/assets/motos/2.jpg"
+                },
+                {
+                    "url": "/assets/motos/3.jpg"
+                },
+                {
+                    "url": "/assets/motos/4.jpg"
+                },
+                {
+                    "url": "/assets/motos/5.jpg"
+                },
+                {
+                    "url": "/assets/motos/6.jpg"
+                },
+                {
+                    "url": "/assets/motos/7.jpg"
+                },
+                {
+                    "url": "/assets/motos/8.jpg"
+                }
+            ],
+            "effect": false
+        },
+        {
+            "id": 6,
+            "label": "Chevrolet",
+            "brand": "Chevrolet",
+            "price": 3000,
+            "model": "Cruze",
+            "year": 2010,
+            "transmition": "Automático",
+            "doors": 4,
+            "concessionaire": "Chevrolet",
+            "state": "Nuevo",
+            "color": "Gris",
+            "ubication": "Bolívar",
+            "km": 0,
+            "type": "Autos",
+            "reserved": false,
+            "image": "https://media.gmc.com/content/dam/Media/images/AR/Vehicles/Chevrolet/automoviles/Cruze/2021/Chevrolet%20Cruze%20Premier%20Hatch.jpg",
+            "moreImages": [
+                {
+                    "url": "/assets/motos/1.jpg"
+                },
+                {
+                    "url": "/assets/motos/2.jpg"
+                },
+                {
+                    "url": "/assets/motos/3.jpg"
+                },
+                {
+                    "url": "/assets/motos/4.jpg"
+                },
+                {
+                    "url": "/assets/motos/5.jpg"
+                },
+                {
+                    "url": "/assets/motos/6.jpg"
+                },
+                {
+                    "url": "/assets/motos/7.jpg"
+                },
+                {
+                    "url": "/assets/motos/8.jpg"
+                }
+            ],
+            "effect": false
+        }
+    ]
+}

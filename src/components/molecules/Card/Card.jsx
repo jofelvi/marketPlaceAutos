@@ -3,7 +3,9 @@ import { AiOutlineHeart } from 'react-icons/ai'
 import { BsTagFill } from 'react-icons/bs'
 import { HiIdentification } from 'react-icons/hi'
 import { TbSteeringWheel } from 'react-icons/tb'
+import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
+import { selectedVehicle } from '../../../store/vehicles/action'
 import Button from '../../atoms/Button/Button'
 import './CardStyles.css'
 
@@ -14,11 +16,20 @@ const Card = ({
     price,
     model,
     year,
+    vehicle,
     transmition
 }) => {
+    const dispatch = useDispatch();
     const navigate = useNavigate();
+
+    const onChangeVehicle = (vehicle) => {
+        dispatch(selectedVehicle(vehicle))
+        navigate(`/details-car/${vehicle.id}`)
+        return
+    }
+
     return (
-        <div className='card' onClick={() => navigate(`/details-car/${id}`)}>
+        <div className='card' onClick={() => onChangeVehicle(vehicle)}>
             <div className='header-card'>
                 <span>{name}</span> <AiOutlineHeart className='icon' size={22} />
             </div>

@@ -1,19 +1,28 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import { useLocation } from 'react-router-dom'
-import { cars } from '../../../utils/recentCars'
+import { getVehicles } from '../../../store/vehicles/action'
 import Card from '../../molecules/Card/Card'
 import './RecentCarsStyles.css'
 
 const RecentCars = () => {
     const location = useLocation();
+    const dispatch = useDispatch();
+    const { vehicles } = useSelector(state => state.vehicles);
     const condition = location.pathname === '/filter-cars';
+
+    useEffect(() => {
+        dispatch(getVehicles());
+        //eslint-disable-next-line
+    }, []);
+
     return (
         <div className='container'>
-            <p>{condition ? '40 Vehículos encontrados' : 'Autos más recientes'}</p>
+            <p>{condition ? `${vehicles?.length} Vehículos encontrados` : 'Autos más recientes'}</p>
 
             <div className={condition ? 'cars-filter' : 'cars'}>
-                {cars.map(car => (
-                    <Card 
+                {vehicles.map(car => (
+                    <Card
                         key={car.id}
                         id={car.id}
                         name={car.label}
@@ -22,7 +31,8 @@ const RecentCars = () => {
                         year={car.year}
                         price={car.price}
                         image={car.image}
-                        cars={cars}
+                        vehicle={car}
+                        cars={vehicles}
                     />
                 ))}
             </div>
