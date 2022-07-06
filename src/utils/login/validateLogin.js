@@ -1,3 +1,5 @@
+import { regexEmail } from "../regex";
+
 export const initialValuesLogin = {
     email: '',
     password: ''
@@ -8,9 +10,8 @@ export const validateLogin = (data) => {
 
     if (!data.email) {
         errors.email = 'El correo electrónico es requerido.';
-    }
-    else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(data.email)) {
-        errors.email = 'Por favor ingrese un email válido. example@email.com';
+    } else if (!regexEmail.test(data.email)) {
+        errors.email = 'Por favor ingrese un correo válido.';
     }
 
     if (!data.password) {

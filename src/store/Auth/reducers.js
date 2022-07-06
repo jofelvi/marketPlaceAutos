@@ -8,21 +8,27 @@ import {
   ROLES,
   LOGINFAILE,
   TOKEN
-} from "./Constants";
-import auth from "../../Auth/Auth";
+} from "./types";
 
 export const INITIAL_STATE = {
   profile: {
-    name: "",
-    email: "",
-    token: auth.getToken(),
-    expiresAt: "",
-    roles: [auth.getRoles()]
+    id: null,
+    first_name: "",
+    last_name: "",
+    username: "",
+    identification: "",
+    phone: "",
+    favorite_vehicles: [],
+    bookings_vehicles: [],
+    sold_vehicles: [],
+    financial_income: 0,
+    roles: [],
+    access_token: null
   },
   loading: false,
   error: "",
   isAuthenticated: false,
-  loginFaile: false
+  loginFailed: false
 };
 
 export default (state = INITIAL_STATE, action) => {
@@ -44,7 +50,7 @@ export default (state = INITIAL_STATE, action) => {
     case ROLES:
       return { ...state, roles: action.payload };
     case LOGINFAILE:
-      return { ...state, loginFaile: action.payload };
+      return { ...state, loginFailed: action.payload };
     default:
       return state;
   }

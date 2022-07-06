@@ -14,6 +14,8 @@
 
 .content-items {
     width: 500px;
+    display: flex;
+    align-items: center;
 }
 
 .item-nav {
@@ -22,6 +24,23 @@
     color: var(--white-bg-color);
     padding-left: 30px;
     cursor: pointer;
+}
+
+.content-menu-user {
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: transparent;
+}
+
+.content-menu-user-show {
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: transparent;
+    margin-top: 210px;
 }
 
 @media screen and (max-width: 800px) {

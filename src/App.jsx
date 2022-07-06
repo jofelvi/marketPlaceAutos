@@ -8,6 +8,8 @@ import Seller from "./pages/register/seller";
 import FilterCars from "./pages/filter-cars";
 import DetailsCars from "./pages/details-car";
 import PublishVehicle from "./pages/publish-vehicle";
+import RequireAuth from "./utils/auth/requireAuth";
+import Profile from "./pages/profile";
 
 function App() {
     return (
@@ -20,7 +22,16 @@ function App() {
                 <Route path="/register-seller" element={<Seller />} />
                 <Route path="/filter-cars" element={<FilterCars />} />
                 <Route path="/details-car/:id" element={<DetailsCars />} />
-                <Route path="/publish-vehicle" element={<PublishVehicle />} />
+                <Route path="/publish-vehicle" element={
+                    <RequireAuth>
+                        <PublishVehicle />
+                    </RequireAuth>
+                } />
+                <Route path="/profile" element={
+                    <RequireAuth>
+                        <Profile />
+                    </RequireAuth>
+                } />
             </Route>
         </Routes>
     )

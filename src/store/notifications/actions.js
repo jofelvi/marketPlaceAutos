@@ -5,7 +5,6 @@ import {
 } from "./types";
 
 export const successModal = (info) => async dispatch => {
-    console.log(info);
     dispatch({
         type: ACTION_SUCCESS,
         value: true,
