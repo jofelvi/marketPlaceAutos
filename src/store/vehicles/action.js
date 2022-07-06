@@ -16,7 +16,6 @@ export const getVehicles = () => async dispatch => {
 
     try {
         const response = await axios.get('/api/recentCars.json')
-        console.log(response.data.results);
         dispatch({
             type: GET_VEHICLES,
             payload: response.data.results

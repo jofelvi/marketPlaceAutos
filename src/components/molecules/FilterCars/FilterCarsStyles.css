@@ -25,6 +25,7 @@
     width: 90%;
     margin: auto;
     display: flex;
+    overflow: auto;
 }
 
 .content-selects button {
@@ -64,7 +65,6 @@
 @media screen and (max-width: 830px) {
     .content-filter {
         width: 90%;
-        height: 100px;
         top: -300px;
     }
 
@@ -85,5 +85,21 @@
 @media screen and (max-width: 487px) {
     .content-filter {
         width: 80%;
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    .content-selects {
+        justify-content: center;
+        background-color: transparent;
+    }
+
+    .content-filter {
+        width: 50%;
+        justify-content: center;
+    }
+
+    .content-selects-transparent {
+        justify-content: center;
     }
 }

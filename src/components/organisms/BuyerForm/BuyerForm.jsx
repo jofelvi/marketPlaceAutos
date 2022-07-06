@@ -19,6 +19,7 @@ const BuyerForm = () => {
     }
 
     const { formik, setFormData } = useOnChange(initialValuesBuyer, validateBuyer, register);
+    
     return (
         <div className='content-buyer-form'>
             <form className='form'>

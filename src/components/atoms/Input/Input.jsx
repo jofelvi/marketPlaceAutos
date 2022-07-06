@@ -10,6 +10,7 @@ const Input = ({
     width = '100%',
     left = '20px',
     formik,
+    disabled,
     onChange,
     Icon,
 }) => {
@@ -26,6 +27,7 @@ const Input = ({
                     placeholder={placeholder}
                     onChange={onChange}
                     className={formik?.errors[name] ? 'input-invalid' : 'input'}
+                    disabled={disabled}
                 />
 
             </div>

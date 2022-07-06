@@ -1,0 +1,9 @@
+export const ERROR = 'ERROR';
+export const EXPIRES_AT = 'EXPIRES_AT';
+export const LOADING = 'LOADING';
+export const PROFILE = 'PROFILE';
+export const AUTHENTICATED = 'AUTHENTICATED';
+export const PROFILERESET = 'PROFILERESET';
+export const ROLES = 'ROLES';
+export const LOGINFAILE = 'LOGINFAILE';
+export const TOKEN = 'TOKEN';

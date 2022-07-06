@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { HiIdentification } from 'react-icons/hi'
 import { ImUser } from 'react-icons/im'
@@ -8,9 +8,15 @@ import Input from '../../atoms/Input/Input'
 import { initialValuesSeller, validateSeller } from '../../../utils/register/validateRegister'
 import useOnChange from '../../../hooks/useOnChange'
 import './SellerFormStyles.css'
+import Select from '../../atoms/Select/Select'
+import { useSelector } from 'react-redux'
+import { getCities } from '../../../store/ubications/action'
+import { useDispatch } from 'react-redux'
 
 const SellerForm = () => {
     const navigate = useNavigate();
+    const dispatch = useDispatch();
+    const { cities } = useSelector(state => state.ubications);
 
     const register = (data) => {
         console.log(data);
@@ -20,7 +26,12 @@ const SellerForm = () => {
     }
 
     const { formik, setFormData } = useOnChange(initialValuesSeller, validateSeller, register);
-    
+
+    useEffect(() => {
+        dispatch(getCities())
+        //eslint-disable-next-line
+    }, []);
+
     return (
         <div className='content-seller-form'>
             <form className='form'>
@@ -40,7 +51,7 @@ const SellerForm = () => {
 
                     <Input
                         name='phone'
-                        type='phone'
+                        type='text'
                         placeholder='Teléfono'
                         onChange={formik.handleChange}
                         value={formik.values.phone}
@@ -75,20 +86,8 @@ const SellerForm = () => {
                     />
 
                     <Input
-                        name='state'
-                        type='text'
-                        placeholder='Estado'
-                        onChange={formik.handleChange}
-                        value={formik.values.state}
-                        formik={formik}
-                        Icon={HiIdentification}
-                        width='250px'
-                        left='20px'
-                    />
-
-                    <Input
                         name='email'
-                        type='email'
+                        type='text'
                         placeholder='Correo electrónico'
                         onChange={formik.handleChange}
                         value={formik.values.email}
@@ -122,16 +121,14 @@ const SellerForm = () => {
                         left='20px'
                     />
 
-                    <Input
+                    <Select
                         name='ubication'
-                        type='text'
-                        placeholder='Ubicación'
-                        onChange={formik.handleChange}
-                        value={formik.values.ubication}
                         formik={formik}
+                        value={formik.values.ubication}
+                        selectBorder
                         Icon={BiWorld}
-                        width='250px'
-                        left='20px'
+                        onChange={formik.handleChange}
+                        options={cities}
                     />
 
                     <label className={formik?.errors['accept'] ? 'checkbox-red' : 'checkbox'}><input type="checkbox" name='accept' value={formik.values.accept} onChange={formik.handleChange} formik={formik} /> {formik?.errors['accept'] ? formik?.errors['accept'] : 'Acepto términos y condiciones'}</label>

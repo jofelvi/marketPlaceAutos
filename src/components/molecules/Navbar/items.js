@@ -1,21 +1,6 @@
 export const itemsLogged = [
     {
         id: 1,
-        label: 'Publicar'
-    },
-    {
-        id: 2,
-        label: 'Concesionarios'
-    },
-    {
-        id: 2,
-        label: 'Cuenta'
-    }
-]
-
-export const items = [
-    {
-        id: 1,
         label: 'Publicar',
         route: '/publish-vehicle'
     },
@@ -25,7 +10,20 @@ export const items = [
         route: '/'
     },
     {
+        id: 3,
+        label: 'Cuenta',
+        route: '/profile'
+    }
+]
+
+export const items = [
+    {
         id: 2,
+        label: 'Concesionarios',
+        route: '/'
+    },
+    {
+        id: 3,
         label: 'Iniciar Sesión',
         route: '/login',
     }

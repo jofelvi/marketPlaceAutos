@@ -1,3 +1,5 @@
+import { regexEmail, regexNumber, regexString } from "../regex";
+
 export const initialValuesBuyer = {
     first_name: '',
     last_name: '',
@@ -26,21 +28,27 @@ export const validateBuyer = (data) => {
 
     if (!data.first_name) {
         errors.first_name = 'El nombre es requerido.';
+    } else if (!regexString.test(data.first_name)) {
+        errors.first_name = 'El nombre sólo debe tener letras.';
     }
 
     if (!data.last_name) {
         errors.last_name = 'El apellido es requerido.';
+    } else if (!regexString.test(data.last_name)) {
+        errors.last_name = 'El apellido sólo debe tener letras.';
     }
 
     if (!data.identification) {
         errors.identification = 'La identificación es requerida.';
+    } else if (!regexNumber.test(data.identification)) {
+        errors.identification = 'La identificación sólo debe tener números.';
     }
 
     if (!data.email) {
         errors.email = 'El correo electrónico es requerido.';
     }
-    else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(data.email)) {
-        errors.email = 'Por favor ingrese un email válido. example@email.com';
+    else if (!regexEmail.test(data.email)) {
+        errors.email = 'Por favor ingrese un email válido';
     }
 
     if (!data.password) {
@@ -68,25 +76,24 @@ export const validateSeller = (data) => {
 
     if (!data.phone) {
         errors.phone = 'El número de contacto es requerido.';
+    } else if (!regexNumber.test(data.phone)) {
+        errors.phone = 'Por favor ingrese un número de contacto válido.';
     }
-    
+
     if (!data.social_name) {
         errors.social_name = 'La razón social es requerida.';
     }
 
-    if (!data.state) {
-        errors.state = 'Es estado es requerido.';
-    }
-
     if (!data.identification) {
         errors.identification = 'La identificación es requerida.';
+    } else if (!regexNumber.test(data.identification)) {
+        errors.identification = 'La identificación sólo debe tener números.';
     }
 
     if (!data.email) {
         errors.email = 'El correo electrónico es requerido.';
-    }
-    else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(data.email)) {
-        errors.email = 'Por favor ingrese un email válido. example@email.com';
+    } else if (!regexEmail.test(data.email)) {
+        errors.email = 'Por favor ingrese un email válido';
     }
 
     if (!data.password) {

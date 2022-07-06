@@ -4,11 +4,7 @@
     flex-direction: column;
     background-color: var(--white-bg-color);
     padding: 10px;
-}
-
-.content-select:first-child {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-radius: 10px;
 }
 
 .content-select-border {
@@ -105,7 +101,7 @@
 }
 
 .content-select-transparent {
-    width: 90px;
+    width: 120px;
     display: flex;
     flex-direction: column;
     background-color: transparent;
@@ -122,9 +118,9 @@
     cursor: pointer;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1450px) {
     .content-select {
-        width: calc(100% / 4);
+        width: 200px;
     }
 }
 

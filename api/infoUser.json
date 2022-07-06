@@ -1,0 +1,161 @@
+{
+    "result": {
+        "id": 1,
+        "first_name": "Carlos",
+        "last_name": "Martinez",
+        "username": "cjmp99",
+        "email": "email@example.com",
+        "ubication": "Caracas",
+        "identification": "28000000",
+        "phone": "23452346",
+        "favorite_vehicles": [
+            {
+                "id": 1,
+                "label": "Mitsubishi",
+                "brand": "Mitsubishi",
+                "price": 5000,
+                "model": "Lancer",
+                "year": 2010,
+                "transmition": "Sincrónico",
+                "doors": 4,
+                "concessionaire": "Mitsubishi",
+                "state": "Usado",
+                "color": "Azul",
+                "ubication": "Barquisimeto",
+                "km": 25000,
+                "type": "Autos",
+                "reserved": false,
+                "image": "https://www.autotrader.com/wp-content/uploads/2022/03/2008-Mitsubsihi-Lancer-Evolution-MR.jpg",
+                "moreImages": [
+                    {
+                        "url": "/assets/motos/1.jpg"
+                    },
+                    {
+                        "url": "/assets/motos/2.jpg"
+                    },
+                    {
+                        "url": "/assets/motos/3.jpg"
+                    },
+                    {
+                        "url": "/assets/motos/4.jpg"
+                    },
+                    {
+                        "url": "/assets/motos/5.jpg"
+                    },
+                    {
+                        "url": "/assets/motos/6.jpg"
+                    },
+                    {
+                        "url": "/assets/motos/7.jpg"
+                    },
+                    {
+                        "url": "/assets/motos/8.jpg"
+                    }
+                ],
+                "effect": false
+            }
+        ],
+        "bookings_vehicles": [
+            {
+                "id": 6,
+                "label": "Chevrolet",
+                "brand": "Chevrolet",
+                "price": 3000,
+                "model": "Cruze",
+                "year": 2010,
+                "transmition": "Automático",
+                "doors": 4,
+                "concessionaire": "Chevrolet",
+                "state": "Nuevo",
+                "color": "Gris",
+                "ubication": "Bolívar",
+                "km": 0,
+                "type": "Autos",
+                "reserved": false,
+                "image": "https://media.gmc.com/content/dam/Media/images/AR/Vehicles/Chevrolet/automoviles/Cruze/2021/Chevrolet%20Cruze%20Premier%20Hatch.jpg",
+                "moreImages": [
+                    {
+                        "url": "/assets/motos/1.jpg"
+                    },
+                    {
+                        "url": "/assets/motos/2.jpg"
+                    },
+                    {
+                        "url": "/assets/motos/3.jpg"
+                    },
+                    {
+                        "url": "/assets/motos/4.jpg"
+                    },
+                    {
+                        "url": "/assets/motos/5.jpg"
+                    },
+                    {
+                        "url": "/assets/motos/6.jpg"
+                    },
+                    {
+                        "url": "/assets/motos/7.jpg"
+                    },
+                    {
+                        "url": "/assets/motos/8.jpg"
+                    }
+                ],
+                "effect": false
+            }
+        ],
+        "sold_vehicles": [
+            {
+                "id": 4,
+                "label": "Mercedez",
+                "brand": "Mercedez",
+                "price": 12000,
+                "model": "s300",
+                "year": 2005,
+                "transmition": "Automático",
+                "doors": 4,
+                "concessionaire": "Autos VIP",
+                "state": "Usado",
+                "color": "Blanco",
+                "ubication": "Vargas",
+                "km": 150000,
+                "type": "Autos",
+                "reserved": false,
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Mercedes-Benz_W206_IMG_4869.jpg/800px-Mercedes-Benz_W206_IMG_4869.jpg",
+                "moreImages": [
+                    {
+                        "url": "/assets/motos/1.jpg"
+                    },
+                    {
+                        "url": "/assets/motos/2.jpg"
+                    },
+                    {
+                        "url": "/assets/motos/3.jpg"
+                    },
+                    {
+                        "url": "/assets/motos/4.jpg"
+                    },
+                    {
+                        "url": "/assets/motos/5.jpg"
+                    },
+                    {
+                        "url": "/assets/motos/6.jpg"
+                    },
+                    {
+                        "url": "/assets/motos/7.jpg"
+                    },
+                    {
+                        "url": "/assets/motos/8.jpg"
+                    }
+                ],
+                "effect": false
+            }
+        ],
+        "financial_income": 1834,
+        "roles": [
+            {
+                "id": 1,
+                "type": "user" 
+            }
+        ],
+        "access_token": "eyJpZCI6MSwiZmlyc3RfbmFtZSI6IkNhcmxvcyIsImxhc3RfbmFtZSI6Ik1hcnRpbmV6IiwidXNlcm5hbWUiOiJjam1wOTkiLCJpZGVudGlmaWNhdGlvbiI6IjI4MDAwMDAwIiwicGhvbmUiOiIyMzQ1MjM0NiIsImZhdm9yaXRlX3ZlaGljbGVzIjpbeyJpZCI6MSwibGFiZWwiOiJNaXRzdWJpc2hpIiwiYnJhbmQiOiJNaXRzdWJpc2hpIiwicHJpY2UiOjUwMDAsIm1vZGVsIjoiTGFuY2VyIiwieWVhciI6MjAxMCwidHJhbnNtaXRpb24iOiJTaW5jcsOzbmljbyIsImRvb3JzIjo0LCJjb25jZXNzaW9uYWlyZSI6Ik1pdHN1YmlzaGkiLCJzdGF0ZSI6IlVzYWRvIiwiY29sb3IiOiJBenVsIiwidWJpY2F0aW9uIjoiQmFycXVpc2ltZXRvIiwia20iOjI1MDAwLCJ0eXBlIjoiQXV0b3MiLCJyZXNlcnZlZCI6ZmFsc2UsImltYWdlIjoiaHR0cHM6Ly93d3cuYXV0b3RyYWRlci5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjIvMDMvMjAwOC1NaXRzdWJzaWhpLUxhbmNlci1Fdm9sdXRpb24tTVIuanBnIiwibW9yZUltYWdlcyI6W3sidXJsIjoiL2Fzc2V0cy9tb3Rvcy8xLmpwZyJ9LHsidXJsIjoiL2Fzc2V0cy9tb3Rvcy8yLmpwZyJ9LHsidXJsIjoiL2Fzc2V0cy9tb3Rvcy8zLmpwZyJ9LHsidXJsIjoiL2Fzc2V0cy9tb3Rvcy80LmpwZyJ9LHsidXJsIjoiL2Fzc2V0cy9tb3Rvcy81LmpwZyJ9LHsidXJsIjoiL2Fzc2V0cy9tb3Rvcy82LmpwZyJ9LHsidXJsIjoiL2Fzc2V0cy9tb3Rvcy83LmpwZyJ9LHsidXJsIjoiL2Fzc2V0cy9tb3Rvcy84LmpwZyJ9XSwiZWZmZWN0IjpmYWxzZX1dLCJib29raW5nc192ZWhpY2xlcyI6W3siaWQiOjYsImxhYmVsIjoiQ2hldnJvbGV0IiwiYnJhbmQiOiJDaGV2cm9sZXQiLCJwcmljZSI6MzAwMCwibW9kZWwiOiJDcnV6ZSIsInllYXIiOjIwMTAsInRyYW5zbWl0aW9uIjoiQXV0b23DoXRpY28iLCJkb29ycyI6NCwiY29uY2Vzc2lvbmFpcmUiOiJDaGV2cm9sZXQiLCJzdGF0ZSI6Ik51ZXZvIiwiY29sb3IiOiJHcmlzIiwidWJpY2F0aW9uIjoiQm9sw612YXIiLCJrbSI6MCwidHlwZSI6IkF1dG9zIiwicmVzZXJ2ZWQiOmZhbHNlLCJpbWFnZSI6Imh0dHBzOi8vbWVkaWEuZ21jLmNvbS9jb250ZW50L2RhbS9NZWRpYS9pbWFnZXMvQVIvVmVoaWNsZXMvQ2hldnJvbGV0L2F1dG9tb3ZpbGVzL0NydXplLzIwMjEvQ2hldnJvbGV0JTIwQ3J1emUlMjBQcmVtaWVyJTIwSGF0Y2guanBnIiwibW9yZUltYWdlcyI6W3sidXJsIjoiL2Fzc2V0cy9tb3Rvcy8xLmpwZyJ9LHsidXJsIjoiL2Fzc2V0cy9tb3Rvcy8yLmpwZyJ9LHsidXJsIjoiL2Fzc2V0cy9tb3Rvcy8zLmpwZyJ9LHsidXJsIjoiL2Fzc2V0cy9tb3Rvcy80LmpwZyJ9LHsidXJsIjoiL2Fzc2V0cy9tb3Rvcy81LmpwZyJ9LHsidXJsIjoiL2Fzc2V0cy9tb3Rvcy82LmpwZyJ9LHsidXJsIjoiL2Fzc2V0cy9tb3Rvcy83LmpwZyJ9LHsidXJsIjoiL2Fzc2V0cy9tb3Rvcy84LmpwZyJ9XSwiZWZmZWN0IjpmYWxzZX1dLCJzb2xkX3ZlaGljbGVzIjpbeyJpZCI6NCwibGFiZWwiOiJNZXJjZWRleiIsImJyYW5kIjoiTWVyY2VkZXoiLCJwcmljZSI6MTIwMDAsIm1vZGVsIjoiczMwMCIsInllYXIiOjIwMDUsInRyYW5zbWl0aW9uIjoiQXV0b23DoXRpY28iLCJkb29ycyI6NCwiY29uY2Vzc2lvbmFpcmUiOiJBdXRvcyBWSVAiLCJzdGF0ZSI6IlVzYWRvIiwiY29sb3IiOiJCbGFuY28iLCJ1YmljYXRpb24iOiJWYXJnYXMiLCJrbSI6MTUwMDAwLCJ0eXBlIjoiQXV0b3MiLCJyZXNlcnZlZCI6ZmFsc2UsImltYWdlIjoiaHR0cHM6Ly91cGxvYWQud2lraW1lZGlhLm9yZy93aWtpcGVkaWEvY29tbW9ucy90aHVtYi8xLzE4L01lcmNlZGVzLUJlbnpfVzIwNl9JTUdfNDg2OS5qcGcvODAwcHgtTWVyY2VkZXMtQmVuel9XMjA2X0lNR180ODY5LmpwZyIsIm1vcmVJbWFnZXMiOlt7InVybCI6Ii9hc3NldHMvbW90b3MvMS5qcGcifSx7InVybCI6Ii9hc3NldHMvbW90b3MvMi5qcGcifSx7InVybCI6Ii9hc3NldHMvbW90b3MvMy5qcGcifSx7InVybCI6Ii9hc3NldHMvbW90b3MvNC5qcGcifSx7InVybCI6Ii9hc3NldHMvbW90b3MvNS5qcGcifSx7InVybCI6Ii9hc3NldHMvbW90b3MvNi5qcGcifSx7InVybCI6Ii9hc3NldHMvbW90b3MvNy5qcGcifSx7InVybCI6Ii9hc3NldHMvbW90b3MvOC5qcGcifV0sImVmZmVjdCI6ZmFsc2V9XSwiZmluYW5jaWFsX2luY29tZSI6MTgzNCwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.61FyfNAOaCVWF4VwaB-ZNH8ZZS48Tkhjb3dUIvK-2Tc"
+    }
+}

@@ -7,7 +7,6 @@ import { BsFillTelephoneFill } from 'react-icons/bs'
 import Input from '../../../components/atoms/Input/Input'
 import Select from '../../../components/atoms/Select/Select'
 import './styles.css'
-import { Formik, Form, Field, ErrorMessage } from "formik";
 
 const DataUser = ({ formik }) => {
     const { cities } = useSelector(state => state.ubications);
