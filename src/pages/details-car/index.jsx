@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
@@ -11,7 +11,9 @@ import './styles.css'
 const DetailsCars = () => {
     const { id } = useParams();
     const dispatch = useDispatch();
+    const [displayImage, setDislayImage] = useState(false);
     const { selectedVehicle } = useSelector(state => state.vehicles);
+    const [selectImg, setSelectImg] = useState(null);
 
     const redirectWhatsapp = () => {
         let url = `https://wa.me/584120000000`
@@ -50,17 +52,19 @@ const DetailsCars = () => {
     }, []);
 
     return (
-        <div className='content-details-car'>
+        <div className={!displayImage ? 'content-details-car' : 'content-details-car-display'}>
             {selectedVehicle &&
                 <>
-                    <div className="content-images">
+                    <div className={!displayImage ? "content-images" : 'content-images-display'}>
                         <div className="img-full">
-                            <img src={selectedVehicle?.image} alt="" />
+                            <img className="icon-display" src="/assets/display.svg" alt="Expandir imagen" onClick={() => setDislayImage(!displayImage)} />
+
+                            <img src={!selectImg ? selectedVehicle?.image : selectImg} className="img" alt="" />
                         </div>
 
                         <div className="more-images">
                             {selectedVehicle?.moreImages?.map((img, key) => (
-                                <img key={key} src={img.url} />
+                                <img className="img-child" key={key} src={img.url} onClick={() => setSelectImg(img.url)}/>
                             ))}
                         </div>
 
