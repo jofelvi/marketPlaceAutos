@@ -26,7 +26,7 @@ const Modal = () => {
 
             <div className="info-inputs">
                 {info.inputs && info.inputs.map((input) => (
-                    <div className="content-info-input">
+                    <div className="content-data">
                         <label>{input.label}:</label>
                         <p>{input.value}</p>
                     </div>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35.713" height="27.534" viewBox="0 0 35.713 27.534">
+  <g id="Grupo_181" data-name="Grupo 181" transform="translate(0)">
+    <g id="_51_Control_4" data-name="51 Control 4" transform="translate(0.001 0)">
+      <path id="Trazado_581" data-name="Trazado 581" d="M53.362,37.622c3.348-.03,4.749-1.728,5.78-4.141h3.571V30.456H59.142c-1.03-2.414-1.4-4.934-6.122-5.022s-5.177,2.608-6.207,5.022H27v3.025H46.666A6.866,6.866,0,0,0,53.362,37.622Z" transform="translate(-27 -25.432)" fill="#00a3ff"/>
+      <ellipse id="Elipse_103" data-name="Elipse 103" cx="5.54" cy="5.54" rx="5.54" ry="5.54" transform="translate(20.522 0.506)" fill="#fff"/>
+    </g>
+    <g id="_51_Control_4-2" data-name="51 Control 4" transform="translate(35.714 27.534) rotate(180)">
+      <path id="Trazado_581-2" data-name="Trazado 581" d="M26.362,12.191c3.348-.03,4.749-1.728,5.78-4.141h3.571V5.024H32.142C31.112,2.61,30.738.09,26.02,0S20.842,2.61,19.812,5.024H0V8.049H19.666A6.866,6.866,0,0,0,26.362,12.191Z" transform="translate(0 0)" fill="#00a3ff"/>
+      <ellipse id="Elipse_103-2" data-name="Elipse 103" cx="5.54" cy="5.54" rx="5.54" ry="5.54" transform="translate(20.522 0.506)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

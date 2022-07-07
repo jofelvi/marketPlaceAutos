@@ -15,9 +15,9 @@ const MenuUser = ({ validateModal }) => {
                 <p>cjmp99</p>
                 <IoMdArrowDropup className='icon' onClick={validateModal} size={18}/>
             </div>
-            <li>Publicaciones</li>
+            <li onClick={() => navigate('/publications')}>Publicaciones</li>
             <li>Ventas</li>
-            <li>Favoritos</li>
+            <li onClick={() => navigate('/favorites')}>Favoritos</li>
             <li onClick={() => navigate('/profile')}>Cuenta</li>
             <li>Centro mensajes</li>
             <li onClick={() => dispatch(logoutRedux())}>Cerrar sesión</li>

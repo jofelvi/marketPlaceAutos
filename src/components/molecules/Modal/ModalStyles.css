@@ -9,17 +9,17 @@ h2 {
     margin: auto;
 }
 
-.info-inputs .content-info-input {
+.info-inputs .content-data {
     width: 180px;
     flex-direction: column;
     justify-content: center;
     margin: auto;
 }
 
-.info-inputs .content-info-input label {
+.info-inputs .content-data label {
     color: var(--blue-bg-color);
 }
 
-.info-inputs .content-info-input p {
+.info-inputs .content-data p {
     color: var(--black-bg-color);
 }
