@@ -12,27 +12,19 @@ export const successModal = (info) => async dispatch => {
     });
 };
 
-export const infoModal = () => async dispatch => {
+export const infoModal = (info) => async dispatch => {
     dispatch({
         type: ACTION_INFO,
         value: true,
-        info: {
-            title: 'Info',
-            description: 'show modal info',
-            type: 'info'
-        }
+        info: info
     });
 };
 
-export const errorModal = () => async dispatch => {
+export const errorModal = (info) => async dispatch => {
     dispatch({
         type: ACTION_ERROR,
         value: true,
-        info: {
-            title: 'Error',
-            description: 'show modal error',
-            type: 'error'
-        }
+        info: info
     });
 };
 

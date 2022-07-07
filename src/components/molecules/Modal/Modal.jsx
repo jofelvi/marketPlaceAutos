@@ -10,11 +10,11 @@ const Modal = () => {
     const { info, showModal } = useSelector(state => state.notifications);
 
     const handleCancel = () => {
-        if(info.type === 'success'){
+        if (info.type === 'success') {
             dispatch(closeSuccessModal())
-        } else if(info.type === 'info'){
+        } else if (info.type === 'info') {
             dispatch(closeInfoModal())
-        } if(info.type === 'error'){
+        } if (info.type === 'error') {
             dispatch(closeErrorModal())
         }
     }
@@ -23,6 +23,15 @@ const Modal = () => {
         <ModalAntd visible={showModal} onCancel={handleCancel} footer={null}>
             <h2>{info.title}</h2>
             {info.image && <img src={info.image} alt={info.title} />}
+
+            <div className="info-inputs">
+                {info.inputs && info.inputs.map((input) => (
+                    <div className="content-info-input">
+                        <label>{input.label}:</label>
+                        <p>{input.value}</p>
+                    </div>
+                ))}
+            </div>
         </ModalAntd>
     );
 };
