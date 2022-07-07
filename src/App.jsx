@@ -10,6 +10,7 @@ import DetailsCars from "./pages/details-car";
 import PublishVehicle from "./pages/publish-vehicle";
 import RequireAuth from "./utils/auth/requireAuth";
 import Profile from "./pages/profile";
+import PageNotFound from "./pages/page-not-found";
 
 function App() {
     return (
@@ -32,6 +33,8 @@ function App() {
                         <Profile />
                     </RequireAuth>
                 } />
+                <Route path="*" element={<PageNotFound />} />
+
             </Route>
         </Routes>
     )

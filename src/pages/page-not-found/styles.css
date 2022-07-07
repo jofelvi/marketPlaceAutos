@@ -1,0 +1,27 @@
+.content-page-not-found {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.content-page-not-found .title img {
+    width: 40px;
+    margin: auto;
+}
+
+.content-page-not-found .title {
+    font-size: 3rem;
+}
+
+.content-page-not-found .content-image img {
+    width: 300px;
+}
+
+.content-page-not-found p {
+    font-size: 1.5rem;
+    text-align: center;
+}
