@@ -17,8 +17,10 @@
                 "model": "Lancer",
                 "year": 2010,
                 "transmition": "Sincrónico",
+                "email": "email@example.com",
+                "phone": "0234524678",
                 "doors": 4,
-                "concessionaire": "Mitsubishi",
+                "seller": "Mitsubishi",
                 "state": "Usado",
                 "color": "Azul",
                 "ubication": "Barquisimeto",
@@ -28,28 +30,28 @@
                 "image": "https://www.autotrader.com/wp-content/uploads/2022/03/2008-Mitsubsihi-Lancer-Evolution-MR.jpg",
                 "moreImages": [
                     {
-                        "url": "/assets/motos/1.jpg"
+                        "url": "https://img.automexico.com/crop/535x349/2018/08/26/aab22b26-f-da52.jpg"
                     },
                     {
-                        "url": "/assets/motos/2.jpg"
+                        "url": "https://www.autotrader.com/wp-content/uploads/2022/03/2008-Mitsubsihi-Lancer-Evolution-MR.jpg"
                     },
                     {
-                        "url": "/assets/motos/3.jpg"
+                        "url": "https://http2.mlstatic.com/D_NQ_NP_792614-MLA49908953266_052022-W.jpg"
                     },
                     {
-                        "url": "/assets/motos/4.jpg"
+                        "url": "https://img.automexico.com/crop/535x349/2019/01/05/ab359a6f-b-d877.jpg"
                     },
                     {
-                        "url": "/assets/motos/5.jpg"
+                        "url": "https://faustoautomoveis.com.br/wp-content/uploads/2022/03/a826effc98584ab5b416aecbe0c0395e_1644927077329.jpg"
                     },
                     {
-                        "url": "/assets/motos/6.jpg"
+                        "url": "https://http2.mlstatic.com/D_NQ_NP_865198-MLB49400831448_032022-O.jpg"
                     },
                     {
-                        "url": "/assets/motos/7.jpg"
+                        "url": "https://http2.mlstatic.com/D_NQ_NP_993844-MLU48131520998_112021-O.jpg"
                     },
                     {
-                        "url": "/assets/motos/8.jpg"
+                        "url": "https://s3.amazonaws.com/static.multiaviso.com/vehicle/images/2-K5M23VPGZVCN-mitsubishi-lancer.jpg"
                     }
                 ],
                 "effect": false
@@ -64,39 +66,41 @@
                 "model": "Cruze",
                 "year": 2010,
                 "transmition": "Automático",
+                "email": "email@example.com",
+                "phone": "0234524678",
                 "doors": 4,
-                "concessionaire": "Chevrolet",
+                "seller": "Chevrolet",
                 "state": "Nuevo",
                 "color": "Gris",
                 "ubication": "Bolívar",
                 "km": 0,
                 "type": "Autos",
                 "reserved": false,
-                "image": "https://media.gmc.com/content/dam/Media/images/AR/Vehicles/Chevrolet/automoviles/Cruze/2021/Chevrolet%20Cruze%20Premier%20Hatch.jpg",
+                "image": "https://acroadtrip.blob.core.windows.net/publicaciones-imagenes/Large/chevrolet/aveo/pe/RT_PU_d8cb2a5ea6ef4759b0844eee7c35f6f1.jpg",
                 "moreImages": [
                     {
-                        "url": "/assets/motos/1.jpg"
+                        "url": "https://www.autosya.com.co/wp-content/uploads/2020/02/aveo2012emotionfull.jpg"
                     },
                     {
-                        "url": "/assets/motos/2.jpg"
+                        "url": "https://acroadtrip.blob.core.windows.net/publicaciones-imagenes/Large/chevrolet/aveo/cl/RT_PU_7c05928433e0404f92e0e8d3d2dd32de.jpg"
                     },
                     {
-                        "url": "/assets/motos/3.jpg"
+                        "url": "https://acroadtrip.blob.core.windows.net/publicaciones-imagenes/Large/chevrolet/aveo/pe/RT_PU_d8cb2a5ea6ef4759b0844eee7c35f6f1.jpg"
                     },
                     {
-                        "url": "/assets/motos/4.jpg"
+                        "url": "https://s3.amazonaws.com/static.multiaviso.com/vehicle/images/2-QYK7QBZXSPWT-chevrolet-aveo.jpg"
                     },
                     {
-                        "url": "/assets/motos/5.jpg"
+                        "url": "https://www.compraensanjuan.com/fotos_vehiculos/1463787_1.jpg"
                     },
                     {
-                        "url": "/assets/motos/6.jpg"
+                        "url": "https://miauto.gt/wp-content/uploads/thememakers/cardealer/1108/2580/main/5c8d55c04522b.png"
                     },
                     {
-                        "url": "/assets/motos/7.jpg"
+                        "url": "https://acroadtrip.blob.core.windows.net/publicaciones-imagenes/Large/chevrolet/aveo/ar/RT_PU_9e121807ade945108e8840ff8551f991.jpg"
                     },
                     {
-                        "url": "/assets/motos/8.jpg"
+                        "url": "https://acroadtrip.blob.core.windows.net/publicaciones-imagenes/Large/chevrolet/aveo/ar/RT_PU_4e65b301c87f49228b97ca78267b1868.jpg"
                     }
                 ],
                 "effect": false
@@ -111,8 +115,10 @@
                 "model": "s300",
                 "year": 2005,
                 "transmition": "Automático",
+                "email": "email@example.com",
+                "phone": "0234524678",
                 "doors": 4,
-                "concessionaire": "Autos VIP",
+                "seller": "Autos VIP",
                 "state": "Usado",
                 "color": "Blanco",
                 "ubication": "Vargas",
@@ -122,28 +128,28 @@
                 "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Mercedes-Benz_W206_IMG_4869.jpg/800px-Mercedes-Benz_W206_IMG_4869.jpg",
                 "moreImages": [
                     {
-                        "url": "/assets/motos/1.jpg"
+                        "url": "https://http2.mlstatic.com/D_NQ_NP_619524-MLA50123093111_052022-V.jpg"
                     },
                     {
-                        "url": "/assets/motos/2.jpg"
+                        "url": "https://chileautos.pxcrush.net/cars/dealer/8yy89m5kq8n3a9mggjkzuc677.jpg?pxc_method=limitfill&pxc_bgtype=self&pxc_size=720,480"
                     },
                     {
-                        "url": "/assets/motos/3.jpg"
+                        "url": "https://http2.mlstatic.com/D_NQ_NP_911718-MLA48926065032_012022-O.jpg"
                     },
                     {
-                        "url": "/assets/motos/4.jpg"
+                        "url": "https://http2.mlstatic.com/D_NQ_NP_842613-MLM44702021952_012021-W.jpg"
                     },
                     {
-                        "url": "/assets/motos/5.jpg"
+                        "url": "https://http2.mlstatic.com/D_NQ_NP_770357-MLM44702047175_012021-O.jpg"
                     },
                     {
-                        "url": "/assets/motos/6.jpg"
+                        "url": "https://a.ccdn.es/cnet/2021/06/11/49269531/463694254_g.jpg"
                     },
                     {
-                        "url": "/assets/motos/7.jpg"
+                        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Mercedes-Benz_W206_IMG_4869.jpg/800px-Mercedes-Benz_W206_IMG_4869.jpg"
                     },
                     {
-                        "url": "/assets/motos/8.jpg"
+                        "url": "https://a.ccdn.es/cnet/2022/02/16/51310664/545854270_g.jpg"
                     }
                 ],
                 "effect": false
