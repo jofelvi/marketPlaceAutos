@@ -1,0 +1,34 @@
+{
+    "results": [
+        {
+            "id": 1341235,
+            "vehicle": "Mazda",
+            "units": 2,
+            "date": "22-06-2022",
+            "price": 1200,
+            "views": 865,
+            "status": "active",
+            "image": "https://cdn.motor1.com/images/mgl/pEeOJ/s1/hyundai-i20-n-2021.webp"
+        },
+        {
+            "id": 56345000,
+            "vehicle": "Mitsubishi",
+            "units": 3,
+            "date": "22-03-2022",
+            "price": 1200,
+            "views": 1000,
+            "status": "active",
+            "image": "https://www.autotrader.com/wp-content/uploads/2022/03/2008-Mitsubsihi-Lancer-Evolution-MR.jpg"
+        },
+        {
+            "id": 2123467,
+            "vehicle": "Toyota",
+            "units": 1,
+            "date": "15-04-2022",
+            "price": 1800,
+            "views": 933,
+            "status": "active",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Toyota_Corolla_Hybrid_CRI_10_2021_1615.jpg/1200px-Toyota_Corolla_Hybrid_CRI_10_2021_1615.jpg"
+        }
+    ]
+}

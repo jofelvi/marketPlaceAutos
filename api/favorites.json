@@ -1,0 +1,34 @@
+{
+    "results": [
+        {
+            "id": 2234235,
+            "vehicle": "Hyundai",
+            "units": 2,
+            "date": "12-05-2022",
+            "price": 3000,
+            "views": 2001,
+            "status": "active",
+            "image": "https://cdn.motor1.com/images/mgl/pEeOJ/s1/hyundai-i20-n-2021.webp"
+        },
+        {
+            "id": 9234235,
+            "vehicle": "Chevrolet",
+            "units": 5,
+            "date": "30-02-2022",
+            "price": 2950,
+            "views": 1000,
+            "status": "active",
+            "image": "https://www.autotrader.com/wp-content/uploads/2022/03/2008-Mitsubsihi-Lancer-Evolution-MR.jpg"
+        },
+        {
+            "id": 3234689,
+            "vehicle": "Dodge",
+            "units": 7,
+            "date": "19-01-2022",
+            "price": 3000,
+            "views": 233,
+            "status": "active",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Toyota_Corolla_Hybrid_CRI_10_2021_1615.jpg/1200px-Toyota_Corolla_Hybrid_CRI_10_2021_1615.jpg"
+        }
+    ]
+}

@@ -11,6 +11,8 @@ import PublishVehicle from "./pages/publish-vehicle";
 import RequireAuth from "./utils/auth/requireAuth";
 import Profile from "./pages/profile";
 import PageNotFound from "./pages/page-not-found";
+import Publications from "./pages/publications";
+import Favorites from "./pages/favorites";
 
 function App() {
     return (
@@ -31,6 +33,16 @@ function App() {
                 <Route path="/profile" element={
                     <RequireAuth>
                         <Profile />
+                    </RequireAuth>
+                } />
+                <Route path="/publications" element={
+                    <RequireAuth>
+                        <Publications />
+                    </RequireAuth>
+                } />
+                <Route path="/favorites" element={
+                    <RequireAuth>
+                        <Favorites />
                     </RequireAuth>
                 } />
                 <Route path="*" element={<PageNotFound />} />

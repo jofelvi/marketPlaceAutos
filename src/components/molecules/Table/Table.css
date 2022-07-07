@@ -1,0 +1,68 @@
+table {
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    background-color: var(--white-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: auto;
+}
+
+.img-td {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.content-info-vehicle {
+    width: 200px;
+    display: block;
+    color: var(--blue-bg-color);
+    text-align: center;
+}
+
+.min-table {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    background-color: var(--white-bg-color);
+    border-radius: 10px !important;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+}
+
+.min-table .col {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: var(--white-bg-color);
+}
+
+.min-table .col label {
+    color: var(--blue-bg-color);
+}
+
+.min-table .col svg {
+    color: var(--blue-bg-color);
+    cursor: pointer;
+}
+
+.button-edit {
+    width: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    color: var(--blue-bg-color);
+    cursor: pointer;
+}
+
+td {
+    border-bottom: 1px solid var(--gray-bg-color);
+}

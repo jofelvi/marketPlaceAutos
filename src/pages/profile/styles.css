@@ -49,6 +49,7 @@
 .content-profile .content-info-user .inputs {
     width: 80%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
 }
