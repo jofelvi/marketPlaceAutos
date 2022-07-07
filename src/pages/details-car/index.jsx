@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'
-import { useLocation, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import Button from '../../components/atoms/Button/Button'
+import Modal from '../../components/molecules/Modal/Modal'
+import { infoModal } from '../../store/notifications/actions'
 import { getInfoVehicleById } from '../../store/vehicles/action'
 import './styles.css'
 
@@ -11,11 +13,34 @@ const DetailsCars = () => {
     const dispatch = useDispatch();
     const { selectedVehicle } = useSelector(state => state.vehicles);
 
-
-
     const redirectWhatsapp = () => {
         let url = `https://wa.me/584120000000`
         window.open(url, '_blank');
+    }
+
+    const showDetailsSeller = () => {
+        dispatch(infoModal({
+            title: 'Datos del vendedor',
+            inputs: [
+                {
+                    label: 'Nombre',
+                    value: selectedVehicle.seller
+                },
+                {
+                    label: 'Ubicación',
+                    value: selectedVehicle.ubication
+                },
+                {
+                    label: 'Correo',
+                    value: selectedVehicle.email
+                },
+                {
+                    label: 'Telefóno',
+                    value: selectedVehicle.phone
+                },
+            ],
+            type: 'info'
+        }))
     }
 
     useEffect(() => {
@@ -40,7 +65,7 @@ const DetailsCars = () => {
                         </div>
 
                         <div className="content-detail-buttons">
-                            <Button label='Datos del vendedor' />
+                            <Button label='Datos del vendedor' onClick={showDetailsSeller} />
                             <Button label='Hacer pregunta' />
                         </div>
                     </div>
@@ -102,6 +127,7 @@ const DetailsCars = () => {
                     </div>
                 </>
             }
+            <Modal />
         </div>
     )
 }
